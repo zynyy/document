@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/multicol/columns.md"],{s4T5:function(o,t){o.exports={content:["article",["h1","demo"]],footnote:"",meta:{title:"columns",category:"property",type:"multicol",anchor:null,filename:"front-end/CSS/property/multicol/columns.md"},anchor:[{title:"demo",tag:"h1",href:"#anchor-demo"}]}}});

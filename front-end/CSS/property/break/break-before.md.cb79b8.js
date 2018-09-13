@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/break/break-before.md"],{"9AXG":function(e,r){e.exports={content:["article",["h1","break"]],footnote:"",meta:{title:"break-before",category:"property",type:"break",filename:"front-end/CSS/property/break/break-before.md"},anchor:[{title:"break",tag:"h1",href:"#anchor-break"}]}}});

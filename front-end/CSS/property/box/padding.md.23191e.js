@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/padding.md"],{"e8+5":function(n,t){n.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"padding",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/padding.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

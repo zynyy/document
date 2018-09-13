@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/fill-stroke/fill-color.md"],{"/SuM":function(l,o){l.exports={content:["article",["h1","fill"]],footnote:"",meta:{title:"fill-color",category:"property",type:"fill-stroke",anchor:null,filename:"front-end/CSS/property/fill-stroke/fill-color.md"},anchor:[{title:"fill",tag:"h1",href:"#anchor-fill"}]}}});

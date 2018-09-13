@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/margin-inline-start.md"],{tJgr:function(t,n){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"margin-inline-start",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/margin-inline-start.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

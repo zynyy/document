@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/backgrounds/box-shadow.md"],{LSTw:function(o,t){o.exports={content:["article",["h1","box-shadow"]],footnote:"",meta:{title:"box-shadow",category:"property",type:"backgrounds",filename:"front-end/CSS/property/backgrounds/box-shadow.md"},anchor:[{title:"box-shadow",tag:"h1",href:"#anchor-box-shadow"}]}}});

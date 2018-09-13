@@ -1,0 +1,1 @@
+webpackJsonp(["operations/docker/volume/rm.md"],{o4OS:function(o,e){o.exports={content:["article",["h1","docker volume rm"]],footnote:"",meta:{title:"docker volume",category:"command cli",type:"volume",order:1,filename:"operations/docker/volume/rm.md"},anchor:[{title:"docker volume rm",tag:"h1",href:"#anchor-docker-volume-rm"}]}}});

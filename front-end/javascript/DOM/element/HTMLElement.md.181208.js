@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/javascript/DOM/element/HTMLElement.md"],{gHIO:function(e,n){e.exports={content:["article"],footnote:"",meta:{filename:"front-end/javascript/DOM/element/HTMLElement.md"},anchor:[]}}});

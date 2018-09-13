@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/padding-right.md"],{SXKy:function(t,n){t.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"padding-right",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/padding-right.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

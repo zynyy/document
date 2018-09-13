@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/@-rules/conditional/@font-face.md"],{xJk3:function(t,n){t.exports={content:["article",["h1","font"]],footnote:"",meta:{title:"At-font-face",category:"At-rules",type:"conditional",filename:"front-end/CSS/@-rules/conditional/@font-face.md"},anchor:[{title:"font",tag:"h1",href:"#anchor-font"}]}}});

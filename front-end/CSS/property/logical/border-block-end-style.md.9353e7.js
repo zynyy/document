@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-block-end-style.md"],{"6/Kl":function(e,o){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-block-end-style",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-block-end-style.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

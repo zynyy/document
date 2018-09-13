@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/polyline/index.md"],{dX2i:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"polyline",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/polyline/index.md"},anchor:[]}}});

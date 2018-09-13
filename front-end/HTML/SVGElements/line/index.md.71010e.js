@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/line/index.md"],{IEem:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"line",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/line/index.md"},anchor:[]}}});

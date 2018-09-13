@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/margin.md"],{vcAY:function(n,r){n.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"margin",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/margin.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

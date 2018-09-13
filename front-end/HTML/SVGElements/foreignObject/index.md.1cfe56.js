@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/foreignObject/index.md"],{DWCe:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"foreignObject",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/foreignObject/index.md"},anchor:[]}}});

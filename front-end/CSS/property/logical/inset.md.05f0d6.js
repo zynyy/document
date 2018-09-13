@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/inset.md"],{"L+MD":function(t,e){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"inset",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/inset.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

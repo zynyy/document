@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/view/index.md"],{PlsG:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"view",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/view/index.md"},anchor:[]}}});

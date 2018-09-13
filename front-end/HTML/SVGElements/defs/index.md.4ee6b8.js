@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/defs/index.md"],{Qur7:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"defs",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/defs/index.md"},anchor:[]}}});

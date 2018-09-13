@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/ui/caret-shape.md"],{z0OD:function(e,t){e.exports={content:["article",["h1","line"]],footnote:"",meta:{title:"caret-shape",category:"property",type:"ui",anchor:"",filename:"front-end/CSS/property/ui/caret-shape.md"},anchor:[{title:"line",tag:"h1",href:"#anchor-line"}]}}});

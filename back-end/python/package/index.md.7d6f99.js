@@ -1,0 +1,1 @@
+webpackJsonp(["back-end/python/package/index.md"],{w9t7:function(t,e){t.exports={content:["article",["h1","python"],["h2","test"]],footnote:"",meta:{title:"Python demo",category:"package",filename:"back-end/python/package/index.md"},anchor:[{title:"python",tag:"h1",href:"#anchor-python"},{title:"test",tag:"h2",href:"#anchor-test"}]}}});

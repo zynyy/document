@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/text/index.md"],{"/7+q":function(e,t){e.exports={content:["article"],footnote:"",meta:{title:"text",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/text/index.md"},anchor:[]}}});

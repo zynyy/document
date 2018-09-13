@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-inline-width.md"],{Fpze:function(e,t){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-inline-width",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-inline-width.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

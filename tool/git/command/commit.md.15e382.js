@@ -1,0 +1,1 @@
+webpackJsonp(["tool/git/command/commit.md"],{RYNF:function(t,o){t.exports={content:["article"],footnote:"",meta:{title:"git",filename:"tool/git/command/commit.md"},anchor:[]}}});

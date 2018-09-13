@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/content/bookmark-label.md"],{icOP:function(t,o){t.exports={content:["article",["h1","content"]],footnote:"",meta:{title:"bookmark-label",category:"property",type:"content",anchor:null,filename:"front-end/CSS/property/content/bookmark-label.md"},anchor:[{title:"content",tag:"h1",href:"#anchor-content"}]}}});

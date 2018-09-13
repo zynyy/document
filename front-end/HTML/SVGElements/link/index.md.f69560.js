@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/link/index.md"],{yWa1:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"link",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/link/index.md"},anchor:[]}}});

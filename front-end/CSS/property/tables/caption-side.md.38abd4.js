@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/tables/caption-side.md"],{JvIF:function(t,e){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"caption-side",category:"property",type:"tables",anchor:null,filename:"front-end/CSS/property/tables/caption-side.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

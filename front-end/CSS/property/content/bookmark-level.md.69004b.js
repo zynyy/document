@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/content/bookmark-level.md"],{"7EKh":function(t,e){t.exports={content:["article",["h1","content"]],footnote:"",meta:{title:"bookmark-level",category:"property",type:"content",anchor:null,filename:"front-end/CSS/property/content/bookmark-level.md"},anchor:[{title:"content",tag:"h1",href:"#anchor-content"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/device-adapt/max-zoom.md"],{"2d1A":function(e,o){e.exports={content:["article"],footnote:"",meta:{title:"max-zoom",category:"property",type:"device-adapt",anchor:null,filename:"front-end/CSS/property/device-adapt/max-zoom.md"},anchor:[]}}});

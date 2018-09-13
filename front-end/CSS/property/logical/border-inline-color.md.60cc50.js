@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-inline-color.md"],{u3Og:function(o,e){o.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-inline-color",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-inline-color.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

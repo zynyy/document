@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/transforms/perspective-origin.md"],{"4qeU":function(e,r){e.exports={content:["article"],footnote:"",meta:{title:"perspective-origin",category:"property",type:"transforms",filename:"front-end/CSS/property/transforms/perspective-origin.md"},anchor:[]}}});

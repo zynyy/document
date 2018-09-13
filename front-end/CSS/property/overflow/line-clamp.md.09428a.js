@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/overflow/line-clamp.md"],{"7q1o":function(o,e){o.exports={content:["article",["h1","overflow"]],footnote:"",meta:{title:"line-clamp",category:"property",type:"overflow",anchor:null,filename:"front-end/CSS/property/overflow/line-clamp.md"},anchor:[{title:"overflow",tag:"h1",href:"#anchor-overflow"}]}}});

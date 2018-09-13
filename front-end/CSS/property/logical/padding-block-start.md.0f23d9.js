@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/padding-block-start.md"],{CE4A:function(t,o){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"padding-block-start",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/padding-block-start.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

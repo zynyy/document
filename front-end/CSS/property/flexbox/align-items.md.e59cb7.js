@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/flexbox/align-items.md"],{"9KV6":function(t,e){t.exports={content:["article",["h1","align-content"]],footnote:"",meta:{title:"align-items",category:"property",type:"flexbox",filename:"front-end/CSS/property/flexbox/align-items.md"},anchor:[{title:"align-content",tag:"h1",href:"#anchor-align-content"}]}}});

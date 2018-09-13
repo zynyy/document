@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/margin-block-start.md"],{"2xmm":function(t,o){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"margin-block-start",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/margin-block-start.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-inline-end.md"],{tKYW:function(e,n){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-inline-end",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-inline-end.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

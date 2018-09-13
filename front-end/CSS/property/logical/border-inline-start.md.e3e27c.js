@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-inline-start.md"],{cUpC:function(t,e){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-inline-start",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-inline-start.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

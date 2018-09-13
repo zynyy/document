@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/content/bookmark-state.md"],{"J+W6":function(t,o){t.exports={content:["article",["h1","content"]],footnote:"",meta:{title:"bookmark-state",category:"property",type:"content",anchor:null,filename:"front-end/CSS/property/content/bookmark-state.md"},anchor:[{title:"content",tag:"h1",href:"#anchor-content"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/inset-inline-start.md"],{"3xY0":function(t,e){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"inset-inline-start",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/inset-inline-start.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

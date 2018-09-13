@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/multicol/column-rule-width.md"],{MNhT:function(t,o){t.exports={content:["article",["h1","demo"]],footnote:"",meta:{title:"column-rule-width",category:"property",type:"multicol",anchor:null,filename:"front-end/CSS/property/multicol/column-rule-width.md"},anchor:[{title:"demo",tag:"h1",href:"#anchor-demo"}]}}});

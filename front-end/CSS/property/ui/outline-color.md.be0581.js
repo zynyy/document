@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/ui/outline-color.md"],{uyGF:function(o,e){o.exports={content:["article",["h1","line"]],footnote:"",meta:{title:"outline-color",category:"property",type:"ui",anchor:"",filename:"front-end/CSS/property/ui/outline-color.md"},anchor:[{title:"line",tag:"h1",href:"#anchor-line"}]}}});

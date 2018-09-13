@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/svg/index.md"],{"56WG":function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"svg",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/svg/index.md"},anchor:[]}}});

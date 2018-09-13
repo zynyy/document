@@ -1,0 +1,1 @@
+webpackJsonp(["tool/git/command/branch.md"],{zzQK:function(t,o){t.exports={content:["article"],footnote:"",meta:{title:"git branch",category:"command",type:"mark and tweak",filename:"tool/git/command/branch.md"},anchor:[]}}});

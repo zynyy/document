@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-block-color.md"],{"0iRE":function(o,r){o.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-block-color",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-block-color.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

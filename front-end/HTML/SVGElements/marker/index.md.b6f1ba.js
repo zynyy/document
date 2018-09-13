@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/marker/index.md"],{G3YC:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"marker",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/marker/index.md"},anchor:[]}}});

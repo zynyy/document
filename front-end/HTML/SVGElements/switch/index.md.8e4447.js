@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/switch/index.md"],{"7bAg":function(e,t){e.exports={content:["article"],footnote:"",meta:{title:"switch",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/switch/index.md"},anchor:[]}}});

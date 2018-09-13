@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/break/box-decoration-break.md"],{Yg6O:function(e,o){e.exports={content:["article"],footnote:"",meta:{title:"box-decoration-break",category:"property",type:"break",filename:"front-end/CSS/property/break/box-decoration-break.md"},anchor:[]}}});

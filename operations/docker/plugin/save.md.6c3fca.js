@@ -1,0 +1,1 @@
+webpackJsonp(["operations/docker/plugin/save.md"],{ygCv:function(e,o){e.exports={content:["article",["h1","docker plugin save"]],footnote:"",meta:{title:"docker save",category:"command cli",type:"plugin",filename:"operations/docker/plugin/save.md"},anchor:[{title:"docker plugin save",tag:"h1",href:"#anchor-docker-plugin-save"}]}}});

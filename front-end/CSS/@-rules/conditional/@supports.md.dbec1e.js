@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/@-rules/conditional/@supports.md"],{b5Yv:function(t,o){t.exports={content:["article",["h1","supports"]],footnote:"",meta:{title:"At-supports",category:"At-rules",type:"conditional",filename:"front-end/CSS/@-rules/conditional/@supports.md"},anchor:[{title:"supports",tag:"h1",href:"#anchor-supports"}]}}});

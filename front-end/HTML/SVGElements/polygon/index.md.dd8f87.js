@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/polygon/index.md"],{"22TX":function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"polygon",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/polygon/index.md"},anchor:[]}}});

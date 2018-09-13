@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/will-change/will-change.md"],{"A+mn":function(e,l){e.exports={content:["article",["h1","will"]],footnote:"",meta:{title:"will-change",category:"property",type:"will-change",anchor:null,filename:"front-end/CSS/property/will-change/will-change.md"},anchor:[{title:"will",tag:"h1",href:"#anchor-will"}]}}});

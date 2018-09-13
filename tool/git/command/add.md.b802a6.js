@@ -1,0 +1,1 @@
+webpackJsonp(["tool/git/command/add.md"],{MUGw:function(t,o){t.exports={content:["article"],footnote:"",meta:{title:"git add",category:"command",type:"everyday",filename:"tool/git/command/add.md"},anchor:[]}}});

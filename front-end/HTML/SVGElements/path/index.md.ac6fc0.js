@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/path/index.md"],{HPYp:function(e,t){e.exports={content:["article"],footnote:"",meta:{title:"path",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/path/index.md"},anchor:[]}}});

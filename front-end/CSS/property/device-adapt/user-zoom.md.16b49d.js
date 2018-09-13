@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/device-adapt/user-zoom.md"],{KB85:function(e,o){e.exports={content:["article"],footnote:"",meta:{title:"user-zoom",category:"property",type:"device-adapt",anchor:null,filename:"front-end/CSS/property/device-adapt/user-zoom.md"},anchor:[]}}});

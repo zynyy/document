@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/inset-inline.md"],{"I7+1":function(e,n){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"inset-inline",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/inset-inline.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

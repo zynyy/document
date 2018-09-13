@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/inline-size.md"],{JqcS:function(e,n){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"inline-size",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/inline-size.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

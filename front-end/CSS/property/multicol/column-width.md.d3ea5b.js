@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/multicol/column-width.md"],{CI8B:function(t,o){t.exports={content:["article",["h1","demo"]],footnote:"",meta:{title:"column-width",category:"property",type:"multicol",anchor:null,filename:"front-end/CSS/property/multicol/column-width.md"},anchor:[{title:"demo",tag:"h1",href:"#anchor-demo"}]}}});

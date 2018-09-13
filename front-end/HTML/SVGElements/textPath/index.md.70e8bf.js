@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/textPath/index.md"],{"1fil":function(t,e){t.exports={content:["article"],footnote:"",meta:{title:"textPath",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/textPath/index.md"},anchor:[]}}});

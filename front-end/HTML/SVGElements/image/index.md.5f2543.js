@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/image/index.md"],{bhR0:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"image",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/image/index.md"},anchor:[]}}});

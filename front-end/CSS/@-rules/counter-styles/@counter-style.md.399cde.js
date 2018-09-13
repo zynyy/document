@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/@-rules/counter-styles/@counter-style.md"],{uGTn:function(t,e){t.exports={content:["article",["h1","supports"]],footnote:"",meta:{title:"At-counter-style",category:"At-rules",type:"counter-styles",filename:"front-end/CSS/@-rules/counter-styles/@counter-style.md"},anchor:[{title:"supports",tag:"h1",href:"#anchor-supports"}]}}});

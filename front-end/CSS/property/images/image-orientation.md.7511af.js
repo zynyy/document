@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/images/image-orientation.md"],{Ykog:function(e,t){e.exports={content:["article"],footnote:"",meta:{title:"image-orientation",category:"property",type:"images",anchor:null,filename:"front-end/CSS/property/images/image-orientation.md"},anchor:[]}}});

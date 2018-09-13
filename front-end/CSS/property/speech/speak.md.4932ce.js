@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/speech/speak.md"],{z42G:function(e,t){e.exports={content:["article",["h1","speech"]],footnote:"",meta:{title:"speak",category:"property",type:"speech",anchor:null,filename:"front-end/CSS/property/speech/speak.md"},anchor:[{title:"speech",tag:"h1",href:"#anchor-speech"}]}}});

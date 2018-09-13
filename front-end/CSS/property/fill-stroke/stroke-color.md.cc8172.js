@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/fill-stroke/stroke-color.md"],{AO0g:function(o,t){o.exports={content:["article",["h1","fill"]],footnote:"",meta:{title:"stroke-color",category:"property",type:"fill-stroke",anchor:null,filename:"front-end/CSS/property/fill-stroke/stroke-color.md"},anchor:[{title:"fill",tag:"h1",href:"#anchor-fill"}]}}});

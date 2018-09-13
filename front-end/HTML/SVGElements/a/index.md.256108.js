@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/a/index.md"],{h2RJ:function(e,n){e.exports={content:["article",["h2","a"]],footnote:"",meta:{title:"a",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/a/index.md"},anchor:[{title:"a",tag:"h2",href:"#anchor-a"}]}}});

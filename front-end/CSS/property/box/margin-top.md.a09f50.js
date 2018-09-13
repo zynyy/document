@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/margin-top.md"],{"5rzs":function(t,o){t.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"margin-top",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/margin-top.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

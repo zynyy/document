@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/align/grid-row.md"],{DsMq:function(r,o){r.exports={content:["article",["h1","2222"]],footnote:"",meta:{title:"grid-row",category:"property",type:"align",anchor:"column-row-gap",filename:"front-end/CSS/property/align/grid-row.md"},anchor:[{title:"2222",tag:"h1",href:"#anchor-2222"}]}}});

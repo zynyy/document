@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/writing-modes/text-combine-upright.md"],{hFrR:function(t,e){t.exports={content:["article",["h1","dir"]],footnote:"",meta:{title:"text-combine-upright",category:"property",type:"writing-modes",anchor:null,filename:"front-end/CSS/property/writing-modes/text-combine-upright.md"},anchor:[{title:"dir",tag:"h1",href:"#anchor-dir"}]}}});

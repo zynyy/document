@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/padding-top.md"],{TDfp:function(t,o){t.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"padding-top",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/padding-top.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

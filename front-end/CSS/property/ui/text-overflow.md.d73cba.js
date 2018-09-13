@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/ui/text-overflow.md"],{"986A":function(e,t){e.exports={content:["article",["h1","line"]],footnote:"",meta:{title:"text-overflow",category:"property",type:"ui",anchor:"",filename:"front-end/CSS/property/ui/text-overflow.md"},anchor:[{title:"line",tag:"h1",href:"#anchor-line"}]}}});

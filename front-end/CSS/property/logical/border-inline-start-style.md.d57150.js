@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-inline-start-style.md"],{"kc+7":function(t,e){t.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-inline-start-style",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-inline-start-style.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

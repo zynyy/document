@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/fill-stroke/stroke-image.md"],{"9SSa":function(e,t){e.exports={content:["article",["h1","fill"]],footnote:"",meta:{title:"stroke-image",category:"property",type:"fill-stroke",anchor:null,filename:"front-end/CSS/property/fill-stroke/stroke-image.md"},anchor:[{title:"fill",tag:"h1",href:"#anchor-fill"}]}}});

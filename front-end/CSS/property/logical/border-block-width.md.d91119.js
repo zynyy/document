@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-block-width.md"],{A65j:function(o,t){o.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-block-width",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-block-width.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

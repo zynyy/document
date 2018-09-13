@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-start-end-rasius.md"],{"+Gn8":function(r,t){r.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-start-end-rasius",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-start-end-rasius.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

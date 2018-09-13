@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-end-start-radius.md"],{zWwk:function(r,t){r.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-end-start-radius",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-end-start-radius.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

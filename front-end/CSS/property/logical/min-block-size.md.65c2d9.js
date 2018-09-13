@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/min-block-size.md"],{F4Hd:function(o,e){o.exports={content:["article",["h1"]],footnote:"",meta:{title:"min-block-size",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/min-block-size.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

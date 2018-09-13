@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/device-adapt/zoom.md"],{vxJE:function(e,o){e.exports={content:["article"],footnote:"",meta:{title:"zoom",category:"property",type:"device-adapt",anchor:null,filename:"front-end/CSS/property/device-adapt/zoom.md"},anchor:[]}}});

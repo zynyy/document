@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/transforms/transform-style.md"],{sNTc:function(r,t){r.exports={content:["article",["h1","transform"]],footnote:"",meta:{title:"transform-style",category:"property",type:"transforms",filename:"front-end/CSS/property/transforms/transform-style.md"},anchor:[{title:"transform",tag:"h1",href:"#anchor-transform"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/ellipse/index.md"],{Uw7d:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"ellipse",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/ellipse/index.md"},anchor:[]}}});

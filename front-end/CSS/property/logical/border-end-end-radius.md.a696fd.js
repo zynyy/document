@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/border-end-end-radius.md"],{"2BY6":function(e,r){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-end-end-radius",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/border-end-end-radius.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

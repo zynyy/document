@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/ui/box-sizing.md"],{alQc:function(e,n){e.exports={content:["article",["h1","line"]],footnote:"",meta:{title:"box-sizing",category:"property",type:"ui",anchor:"",filename:"front-end/CSS/property/ui/box-sizing.md"},anchor:[{title:"line",tag:"h1",href:"#anchor-line"}]}}});

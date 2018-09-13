@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/margin-block.md"],{"10M2":function(o,t){o.exports={content:["article",["h1"]],footnote:"",meta:{title:"margin-block",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/margin-block.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

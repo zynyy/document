@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/rect/index.md"],{"8+ov":function(e,t){e.exports={content:["article"],footnote:"",meta:{title:"rect",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/rect/index.md"},anchor:[]}}});

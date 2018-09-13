@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/symbol/index.md"],{"6LjK":function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"symbol",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/symbol/index.md"},anchor:[]}}});

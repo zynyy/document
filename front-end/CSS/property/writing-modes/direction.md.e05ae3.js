@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/writing-modes/direction.md"],{"/xxI":function(t,e){t.exports={content:["article",["h1","dir"]],footnote:"",meta:{title:"direction",category:"property",type:"writing-modes",anchor:null,filename:"front-end/CSS/property/writing-modes/direction.md"},anchor:[{title:"dir",tag:"h1",href:"#anchor-dir"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/multicol/column-span.md"],{"4Wjm":function(o,t){o.exports={content:["article",["h1","demo"]],footnote:"",meta:{title:"column-span",category:"property",type:"multicol",anchor:null,filename:"front-end/CSS/property/multicol/column-span.md"},anchor:[{title:"demo",tag:"h1",href:"#anchor-demo"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["tool/git/command/reset.md"],{Jncp:function(t,e){t.exports={content:["article"],footnote:"",meta:{title:"git reset",category:"command",type:"everyday",filename:"tool/git/command/reset.md"},anchor:[]}}});

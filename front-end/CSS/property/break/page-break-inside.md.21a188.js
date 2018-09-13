@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/break/page-break-inside.md"],{ESLo:function(e,r){e.exports={content:["article",["h1","break"]],footnote:"",meta:{title:"page-break-inside",category:"property",type:"break",filename:"front-end/CSS/property/break/page-break-inside.md"},anchor:[{title:"break",tag:"h1",href:"#anchor-break"}]}}});

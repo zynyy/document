@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/tspan/index.md"],{il0q:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"tspan",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/tspan/index.md"},anchor:[]}}});

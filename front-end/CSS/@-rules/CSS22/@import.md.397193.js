@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/@-rules/CSS22/@import.md"],{PFG4:function(t,e){t.exports={content:["article",["h1","supports"]],footnote:"",meta:{title:"At-import",category:"At-rules",type:"CSS22",filename:"front-end/CSS/@-rules/CSS22/@import.md"},anchor:[{title:"supports",tag:"h1",href:"#anchor-supports"}]}}});

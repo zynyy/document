@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/logical/margin-inline-end.md"],{"I/G7":function(n,e){n.exports={content:["article",["h1"]],footnote:"",meta:{title:"margin-inline-end",category:"property",type:"logical",anchor:null,filename:"front-end/CSS/property/logical/margin-inline-end.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/metadata/index.md"],{sGVr:function(e,t){e.exports={content:["article"],footnote:"",meta:{title:"metadata",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/metadata/index.md"},anchor:[]}}});

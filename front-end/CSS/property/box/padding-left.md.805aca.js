@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/padding-left.md"],{MszD:function(t,e){t.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"padding-left",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/padding-left.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

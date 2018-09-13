@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/multicol/column-gap.md"],{oqNP:function(o,t){o.exports={content:["article",["h1","demo"]],footnote:"",meta:{title:"column-gap",category:"property",type:"multicol",anchor:null,filename:"front-end/CSS/property/multicol/column-gap.md"},anchor:[{title:"demo",tag:"h1",href:"#anchor-demo"}]}}});

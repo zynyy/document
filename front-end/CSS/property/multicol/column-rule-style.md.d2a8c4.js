@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/multicol/column-rule-style.md"],{"2z1l":function(e,t){e.exports={content:["article",["h1","demo"]],footnote:"",meta:{title:"column-rule-style",category:"property",type:"multicol",anchor:null,filename:"front-end/CSS/property/multicol/column-rule-style.md"},anchor:[{title:"demo",tag:"h1",href:"#anchor-demo"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["back-end/python/index.md"],{YmJo:function(n,t){n.exports={content:["article",["h1","python"]],footnote:"",meta:{title:"Python demo",filename:"back-end/python/index.md"},anchor:[{title:"python",tag:"h1",href:"#anchor-python"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/SVGElements/circle/index.md"],{DKYx:function(e,n){e.exports={content:["article"],footnote:"",meta:{title:"circle",category:"SVGElement",order:null,filename:"front-end/HTML/SVGElements/circle/index.md"},anchor:[]}}});

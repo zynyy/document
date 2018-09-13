@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/box/margin-right.md"],{PCNQ:function(r,t){r.exports={content:["article",["h1","margin"]],footnote:"",meta:{title:"margin-right",category:"property",type:"box",anchor:null,filename:"front-end/CSS/property/box/margin-right.md"},anchor:[{title:"margin",tag:"h1",href:"#anchor-margin"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/tables/border-spacing.md"],{"08Tx":function(e,t){e.exports={content:["article",["h1"]],footnote:"",meta:{title:"border-spacing",category:"property",type:"tables",anchor:null,filename:"front-end/CSS/property/tables/border-spacing.md"},anchor:[{title:"",tag:"h1",href:"#anchor-"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/HTML/elements/sections/aside/demo"],{K52x:function(e,t,n){e.exports={basic:n("tq5a")}},tq5a:function(e,t){e.exports={content:["article",["pre",{lang:"html",highlighted:""},["code",""]]],footnote:"",meta:{title:"\u57fa\u672c\u7528\u6cd5",filename:"front-end/HTML/elements/sections/aside/demo/basic.md"},anchor:[]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/page/page.md"],{QPfc:function(e,t){e.exports={content:["article",["h1","css"]],footnote:"",meta:{title:"page",category:"property",type:"page",anchor:null,filename:"front-end/CSS/property/page/page.md"},anchor:[{title:"css",tag:"h1",href:"#anchor-css"}]}}});

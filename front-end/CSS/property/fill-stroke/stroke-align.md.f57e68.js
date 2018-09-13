@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/fill-stroke/stroke-align.md"],{mBxv:function(t,e){t.exports={content:["article",["h1","fill"]],footnote:"",meta:{title:"stroke-align",category:"property",type:"fill-stroke",anchor:null,filename:"front-end/CSS/property/fill-stroke/stroke-align.md"},anchor:[{title:"fill",tag:"h1",href:"#anchor-fill"}]}}});

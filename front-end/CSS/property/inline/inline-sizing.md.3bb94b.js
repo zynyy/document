@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/inline/inline-sizing.md"],{"/gpU":function(n,e){n.exports={content:["article"],footnote:"",meta:{title:"inline-sizing",category:"property",type:"inlie",anchor:null,filename:"front-end/CSS/property/inline/inline-sizing.md"},anchor:[]}}});

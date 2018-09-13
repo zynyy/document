@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/javascript/history.md"],{vpZL:function(t,e){t.exports={content:["article",["h1","\u4f60\u662f\u8c01"]],footnote:"",meta:{title:"BOM",filename:"front-end/javascript/history.md"},anchor:[{title:"\u4f60\u662f\u8c01",tag:"h1",href:"#anchor-\u4f60\u662f\u8c01"}]}}});

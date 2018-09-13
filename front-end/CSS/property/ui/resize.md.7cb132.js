@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/ui/resize.md"],{TXMH:function(e,t){e.exports={content:["article",["h1","line"]],footnote:"",meta:{title:"resize",category:"property",type:"ui",anchor:"",filename:"front-end/CSS/property/ui/resize.md"},anchor:[{title:"line",tag:"h1",href:"#anchor-line"}]}}});

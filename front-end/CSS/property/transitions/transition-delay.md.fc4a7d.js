@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/transitions/transition-delay.md"],{AzUJ:function(t,n){t.exports={content:["article",["h1","CSS \u8fc7\u6e21"]],footnote:"",meta:{title:"transition-delay",category:"property",type:"transitions",filename:"front-end/CSS/property/transitions/transition-delay.md"},anchor:[{title:"CSS \u8fc7\u6e21",tag:"h1",href:"#anchor-CSS-\u8fc7\u6e21"}]}}});

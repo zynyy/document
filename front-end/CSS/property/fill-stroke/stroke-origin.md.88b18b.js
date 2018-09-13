@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/fill-stroke/stroke-origin.md"],{oDjR:function(o,t){o.exports={content:["article",["h1","fill"]],footnote:"",meta:{title:"stroke-origin",category:"property",type:"fill-stroke",anchor:null,filename:"front-end/CSS/property/fill-stroke/stroke-origin.md"},anchor:[{title:"fill",tag:"h1",href:"#anchor-fill"}]}}});
