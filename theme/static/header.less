@@ -1,0 +1,26 @@
+
+
+#header {
+    transition: all .3s;
+}
+
+.navbar-light {
+    box-shadow: 0 2px 8px @box-shadow-color;
+}
+
+#nav {
+    .ant-menu-horizontal {
+        border-bottom: none;
+        display: inline-block;
+    }
+    .ant-menu-horizontal>.ant-menu-item,
+    .ant-menu-horizontal>.ant-menu-submenu {
+        height: @layout-header-height;
+        line-height: (@layout-header-height - 4px);
+        min-width: @nav-item-witeh;
+    }
+    .ant-menu-horizontal .ant-menu-item-selected {
+      border-top: 2px solid #1890ff;
+      border-bottom: 2px solid transparent;
+    }
+}
