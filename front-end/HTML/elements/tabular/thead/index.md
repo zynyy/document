@@ -8,6 +8,8 @@ order: 5
 
 # `thead` 元素标签
 
+`<table>`元素的页眉内容
+
 ## 用法
 
 ```html
@@ -19,7 +21,7 @@ order: 5
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
 1. tabular: `<tr>`
 1. scripting: `<script>`、`<template>`
@@ -27,6 +29,16 @@ order: 5
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+```
 
 ## ARIA 无障碍阅读
 

@@ -8,6 +8,8 @@ order: 3
 
 # `b` 元素标签
 
+突显关键词,使用户更加容易注意到的内容。
+
 ## 用法
 
 ```html
@@ -30,6 +32,14 @@ order: 3
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+b {
+  font-weight: bold;
+}
+```
 
 ## ARIA 无障碍阅读
 

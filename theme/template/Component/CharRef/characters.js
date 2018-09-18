@@ -98,16 +98,11 @@ module.exports = (category) => {
       { entities: 'incare', decimal: '#8453', hex: '#x2105' },
 
 
-
       { entities: 'image', decimal: '#8465', hex: '#x2111' },
 
       { entities: 'ell', decimal: '#8467', hex: '#x2113' },
 
       { entities: 'numero', decimal: '#8470', hex: '#x2116' },
-
-
-
-
 
 
       { entities: 'rx', decimal: '#8478', hex: '#x211E' },
@@ -120,14 +115,10 @@ module.exports = (category) => {
       { entities: 'angst', decimal: '#8491', hex: '#x212B' },
 
 
-
-
       { entities: 'alefsym', decimal: '#8501', hex: '#x2135' },
       { entities: 'beth', decimal: '#8502', hex: '#x2136' },
       { entities: 'gimel', decimal: '#8503', hex: '#x2137' },
       { entities: 'daleth', decimal: '#8504', hex: '#x2138' },
-
-
 
 
       { entities: 'ImaginaryI', decimal: '#8520', hex: '#x2148' },

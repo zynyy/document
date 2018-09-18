@@ -33,6 +33,7 @@ module.exports = {
     docker: pickerGenerator('operations/docker') || '',
     HTML: pickerGenerator('front-end/HTML') || '',
     CSS: pickerGenerator('front-end/CSS') || '',
+    javascript: pickerGenerator('front-end/javascript') || '',
   },
   plugins: [
     'bisheng-plugin-react?lang=jsx',

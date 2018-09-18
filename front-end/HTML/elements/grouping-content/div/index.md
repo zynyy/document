@@ -8,6 +8,8 @@ order: 2
 
 # `div` 元素标签
 
+ 是一个通用型的块级容器,没有任何特殊含义。一般用于样式化相关的需求，如果具有文本或者后代不含有语义化的标签则须参照 WAI-ARIA 设置属性 `role`
+
 ## 用法
 
 ```html
@@ -38,6 +40,15 @@ order: 2
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+div {
+  display: block;
+}
+```
+
 
 ## ARIA 无障碍阅读
 

@@ -8,11 +8,12 @@ order: 17
 
 # `rp` 元素标签
 
+用于提供由不支持ruby注释的用户代理显示的后备文本。一种普遍的惯例是围绕ruby注释的ruby文本组件提供括号。
+
 ## 用法
 
 ```html
 // 注意该标签如果浏览器支持 <ruby> 则不显示，反之就会显示。存在一个 <rt> 则须设置两个 <rp> 位于前后。
-// 如果父元素标签是 <rtc> 则会显示
 <ruby>
   <rp>
     子元素 or 文本内容
@@ -36,6 +37,14 @@ order: 17
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+rp {
+  display: none;
+}
+```
 
 ## ARIA 无障碍阅读
 

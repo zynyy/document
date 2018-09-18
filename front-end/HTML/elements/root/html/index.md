@@ -17,7 +17,7 @@ anchor: the-html-element
 </html>
 ```
 
-## 子元素
+## 子元素标签
 
 1. metadata: `<head>`
 1. sections: `<body>`
@@ -39,9 +39,13 @@ anchor: the-html-element
 
 > IE9以下不支持缓存 具体标准详见<https://www.w3.org/TR/2017/REC-html52-20171214/semantics.html#element-attrdef-html-manifest>
 
-## 嵌套规范
+## CSS 默认样式
 
-位于`<!doctype html>`声明之后,内包含`<head>`与`<body>`两标签,该标签有且只有一个存在
+```css
+html {
+  display: block;
+}
+```
 
 ## DOM
 

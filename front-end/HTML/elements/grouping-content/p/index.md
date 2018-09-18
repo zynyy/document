@@ -8,6 +8,8 @@ order: 3
 
 # `p` 元素标签
 
+文本的一个段落. 通常表现为一整块与相邻文本分离的文本。
+
 ## 用法
 
 ```html
@@ -33,9 +35,20 @@ order: 3
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
 
+## CSS 默认样式
+
+```css
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+```
+
 ## ARIA 无障碍阅读
 
 | 属性 | 隐式角色 | 可能存在角色、特征、状态 |
 | ---- | ---- | ---- |
 | | 无 | Roles: 任何角色 <br> aria-*: 全局属性以及角色所对应的私有属性 |
-

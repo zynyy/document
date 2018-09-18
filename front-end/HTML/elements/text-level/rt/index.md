@@ -8,13 +8,16 @@ order: 18
 
 # `rt` 元素标签
 
+为Ruby注释组合文本中提供发音拼写
+
 ## 用法
 
 ```html
 <ruby>
-  <rt></rt>
+  <rt> 子元素 or 文本</rt>
+  or
   <rtc>
-    <rt></rt>
+    <rt> 子元素 or 文本 </rt>
   </rtc>
 </ruby>
 ```
@@ -33,6 +36,23 @@ order: 18
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+ruby > rt {
+  display: block;
+  font-size: 50%;
+  text-align: start;
+}
+
+rt {
+  line-height: normal;
+  text-emphasis: none;
+  text-indent: 0px;
+}
+
+```
 
 ## ARIA 无障碍阅读
 

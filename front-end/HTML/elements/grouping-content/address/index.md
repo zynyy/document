@@ -8,6 +8,8 @@ order: 14
 
 # `address` 元素标签
 
+表示个人或组织的联系信息。它应包括物理位置，联系信息以及识别信息所涉及的人员或组织的手段。
+
 ## 用法
 
 ```html
@@ -35,6 +37,15 @@ order: 14
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+address {
+  display: block;
+  font-style: italic;
+}
+```
 
 ## ARIA 无障碍阅读
 

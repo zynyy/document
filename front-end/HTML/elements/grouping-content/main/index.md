@@ -8,10 +8,12 @@ order: 1
 
 # `main` 元素标签
 
+呈现了文档的主体部分。主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成
+
 ## 用法
 
 ```html
-// 注意一个文档有且只有一个`<main>`标签
+// 注意一个文档有且只有一个 <main> 元素,如果存在多个那么多余的 <main> 元素标签内添加属性 hidden
 <main>
   子元素 or 文本内容
 </main>
@@ -35,6 +37,14 @@ order: 1
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+main {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

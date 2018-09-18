@@ -8,6 +8,8 @@ order: 2
 
 # `label` 元素标签
 
+用户界面中的标题。标题可以与特定的表单控件相关联,称为`<label>`元素的标记控件
+
 ## 用法
 
 ```html
@@ -18,7 +20,7 @@ order: 2
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
 1. scripting: `<script>`、`<noscript>`、`<canvas>`、`<template>`
@@ -34,16 +36,20 @@ order: 2
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
 * 私有属性如下:
 
-| 属性 | 类型 | 值 | 描述 |
-| --- | --- | --- | --- |
-| `for` |
+| 属性 | 值 | 描述 |
+| --- | --- | --- |
+| `for` | 元素 ID | |
+
+## CSS 默认样式
+
+```css
+label {
+  cursor: default;
+}
+```
 
 ## ARIA 无障碍阅读
-
->全局属性 请到 [ARIA] 页面查看
 
 | 属性 | 隐式角色 | 可能存在角色、特征、状态 |
 | ---- | ---- | ---- |
 | | 无 | Roles: 无。 <br> aria-*: 全局属性 |
-
-[ARIR]: /front-end/HTML/ARIA#anchor-roles#anchor-aria-*-属性

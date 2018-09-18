@@ -8,6 +8,8 @@ order: 6
 
 # `li` 元素标签
 
+表示列表里的条目。必须被包含在一个父元素里：一个有顺序的列表`<ol>`，一个无顺序的列表`<ul>`，或者一个菜单`<menu>`。
+
 ## 用法
 
 ```html
@@ -50,6 +52,15 @@ or
 | 属性 | 值 | 描述 |
 | ---- | ---- | ---- |
 | `value` | number | 该属性只有在 嵌套在 `<ol>` 才有。嵌套在 `<ul>` 则没有 |
+
+## CSS 默认样式
+
+```css
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+```
 
 ## ARIA 无障碍阅读
 

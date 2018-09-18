@@ -8,6 +8,8 @@ order: 4
 
 # `button` 元素标签
 
+一个可点击的按钮
+
 ## 用法
 
 ```html
@@ -48,6 +50,35 @@ order: 4
 | `name` | | |
 | `type` | | |
 | `value` | | |
+
+## CSS 默认样式
+
+```css
+button {
+  display: inline-block;
+  font: 400 13.3333px Arial;
+  color: rgb(0, 0, 0);
+  padding: 1px 6px;
+  margin: 0em;
+  align-items: flex-start;
+  text-align: center;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  cursor: default;
+  background-color: rgb(221, 221, 221);
+  box-sizing: border-box;
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgb(221, 221, 221);
+  border-image: initial;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  writing-mode: horizontal-tb !important;
+  appearance: button;
+}
+```
 
 ## ARIA 无障碍阅读
 

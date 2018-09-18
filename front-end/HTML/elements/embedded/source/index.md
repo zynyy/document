@@ -8,6 +8,8 @@ order: 4
 
 # `source` 元素标签
 
+给 `<img>`(父级元素必须是`<picture>`)、`<video>`、`<audio>`提供多种来源。然后浏览器根据当前设备从中选择最合适的资源
+
 ## 用法
 
 ```html
@@ -18,11 +20,16 @@ order: 4
 <audio>
   <source src='' type=''/>
 </audio>
+or
+<picture>
+  <img src='' alt=''/>
+  <source src='' type=''/>
+</picture>
 ```
 
 ## 子元素标签
 
-> 该标签不存在任何子元素和文本内容
+不存在任何子元素和文本内容
 
 ## 属性
 
@@ -42,6 +49,10 @@ order: 4
 | `sizes` | | |
 | `media` | | |
 | `type` | | |
+
+## CSS 默认样式
+
+不存在任何默认样式
 
 ## ARIA 无障碍阅读
 

@@ -4,7 +4,7 @@ import { Link } from 'bisheng/router';
 
 import { Layout, Menu, Icon } from 'antd';
 
-import { docModule } from '../utils';
+import { docModule, uriPath } from '../utils';
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -67,7 +67,7 @@ const flattenMenu = (menu) => {
 
 export default class LeftSide extends React.Component {
   static generateMenuItem(item) {
-    const url = item.filename.replace('.md', '');
+    const url = uriPath(item.filename);
     const { title, disabled } = item;
     const child = !item.link ? (
       <Link

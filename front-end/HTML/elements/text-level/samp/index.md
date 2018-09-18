@@ -8,6 +8,16 @@ order: 22
 
 # `samp` 元素标签
 
+另一程序或计算系统的样本或引用的输出。
+
+## 用法
+
+```html
+<samp>
+  文本内容 or 子元素
+</samp>
+```
+
 ## 子元素标签
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
@@ -22,6 +32,14 @@ order: 22
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+samp {
+  font-family: monospace;
+}
+```
 
 ## ARIA 无障碍阅读
 

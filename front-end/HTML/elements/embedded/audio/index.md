@@ -8,7 +8,9 @@ order: 11
 
 # `audio` 元素标签
 
-## 基本结构
+文档中嵌入音频内容
+
+## 用法
 
 ```html
 <audio>
@@ -45,6 +47,15 @@ order: 11
 | `loop` | | |
 | `muted` | | |
 | `controls` | | |
+
+## CSS 默认样式
+
+```css
+audio {
+  width: 300px;
+  height: 54px;
+}
+```
 
 ## ARIA 无障碍阅读
 

@@ -8,6 +8,8 @@ order: 9
 
 # `dt` 元素标签
 
+定义列表中声明一个术语。该元素仅能作为 `<dl>` 的子元素出现。通常后面紧随着一个或多个 `<dd>` 元素
+
 ## 用法
 
 ```html
@@ -37,6 +39,14 @@ order: 9
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+dt {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

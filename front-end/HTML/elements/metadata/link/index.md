@@ -38,9 +38,13 @@ order: 4
 | `nonce` | URl | |
 | `referrerpolicy` | URl | |
 
-## 嵌套规范
+## CSS 默认样式
 
-通常位于 `<head>` 标签之中, `<title>` 标签之下,该标签可以存在多个
+```css
+link {
+  display: none;
+}
+```
 
 ## DOM 接口(IDL)
 

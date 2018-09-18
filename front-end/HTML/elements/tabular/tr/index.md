@@ -8,6 +8,8 @@ order: 8
 
 # `tr` 元素标签
 
+`<table>` 元素的行
+
 ## 用法
 
 ```html
@@ -32,7 +34,7 @@ order: 8
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
 1. tabular: `<td>`、`<th>`
 1. scripting: `<script>`、`<template>`
@@ -40,6 +42,16 @@ order: 8
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+```
 
 ## ARIA 无障碍阅读
 

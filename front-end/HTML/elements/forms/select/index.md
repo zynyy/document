@@ -8,15 +8,17 @@ order: 5
 
 # `select` 元素标签
 
+是一种表单控件，可创建选项菜单,供用户选择
+
 ## 用法
 
 ```html
-<select>
+<select name=''>
   子元素
 </select>
 ```
 
-## 子元素
+## 子元素标签
 
 1. forms: `<optgroup>`、`<option>`
 1. scrpting: `<script>`、`<template>`
@@ -35,6 +37,41 @@ order: 5
 | `name` | | |
 | `required` | | |
 | `size` | | |
+
+## CSS 默认样式
+
+```css
+select:not(:-internal-list-box) {
+  overflow: visible !important;
+}
+
+select {
+  display: inline-block;
+  color: black;
+  font: 400 13.3333px Arial;
+  text-rendering: auto;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  align-items: center;
+  margin: 0em;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0px;
+  border-color: rgb(169, 169, 169);
+  border-image: initial;
+  white-space: pre;
+  letter-spacing: normal;
+  word-spacing: normal;
+  cursor: default;
+  writing-mode: horizontal-tb !important;
+  box-sizing: border-box;
+  -webkit-rtl-ordering: logical;
+  appearance: menulist;
+}
+```
 
 ## ARIA 无障碍阅读
 

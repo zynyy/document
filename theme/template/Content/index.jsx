@@ -8,7 +8,7 @@ export default collect(async (nextProps) => {
 
   const pageDataPath = pathname.split('/');
   const pageData = nextProps.utils.get(nextProps.data, [...pageDataPath, pageDataPath.pop() ? '' : 'index']);
-  
+
   if (!pageData) {
     console.error(`${pathname} 数据不存在`);
     // eslint-disable-next-line no-throw-literal

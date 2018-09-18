@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Standard({ type, anchor, version }) {
-  const baseURL = 'https://www.w3.org/TR/html';
+  const W3CBaseURL = 'https://www.w3.org/TR/html';
+  const WHATWGBaseURL = 'https://html.spec.whatwg.org/multipage/';
   const HTMLVersion = [{
     version: 5.3,
     state: '草案',
@@ -29,19 +30,20 @@ export default function Standard({ type, anchor, version }) {
             <th>版本</th>
             <th>状态</th>
             <th>发布时间</th>
+            <th>组织</th>
           </tr>
         </thead>
         <tbody>
           {
             HTMLVersion.map(item => (
-                !version
+              !version
                 || (version.start && item.version >= version.start && !version.end)
                 || (version.end && version.end <= item.version && version.start >= item.version)
                 ? (
                   <tr key={item.version}>
                     <td>
                       <a
-                        href={`${baseURL}${`${item.version}`.replace('.', '')}/${type}.html#${anchor}`}
+                        href={`${W3CBaseURL}${`${item.version}`.replace('.', '')}/${type}.html#${anchor}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -54,10 +56,27 @@ export default function Standard({ type, anchor, version }) {
                     <td>
                       {item.time}
                     </td>
+                    <td>W3C</td>
                   </tr>
                 )
                 : null
             ))
+          }
+          {
+            <tr>
+              <td>
+                <a
+                  href={`${WHATWGBaseURL}${type}.html#${anchor}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  1
+                </a>
+              </td>
+              <td>标准</td>
+              <td>2018年9月17日</td>
+              <td>WHATWG</td>
+            </tr>
           }
         </tbody>
       </table>

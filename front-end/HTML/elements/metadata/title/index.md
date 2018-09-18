@@ -26,9 +26,13 @@ order: 3
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
 
-## 嵌套规范
+## CSS 默认样式
 
-位于 `<head>` 标签之中, `<meta>` 之下。只能是文本内容。该标签如果不存在是 `<iframe>` 标签内嵌的网页那么有且只有一个且不存在嵌套的标签
+```css
+title {
+  display: none;
+}
+```
 
 ## DOM 接口(IDL)
 

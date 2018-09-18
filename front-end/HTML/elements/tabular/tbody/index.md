@@ -8,6 +8,8 @@ order: 6
 
 # `tbody` 元素标签
 
+`<table>`元素的主体内容。
+
 ## 用法
 
 ```html
@@ -19,7 +21,7 @@ order: 6
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
 1. tabular: `<tr>`
 1. scripting: `<script>`、`<template>`
@@ -34,6 +36,16 @@ order: 6
 | `colspan` | | |
 | `rowspan` | | |
 | `headers` | | |
+
+## CSS 默认样式
+
+```css
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+```
 
 ## ARIA 无障碍阅读
 

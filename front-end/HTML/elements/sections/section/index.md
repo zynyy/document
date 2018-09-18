@@ -8,7 +8,12 @@ order: 6
 
 # `section` 元素标签
 
+文档中的一个区域(或节),用于强调某一个模块，强调模块本身是作为一个整体的;
+
+## 用法
+
 ```html
+// 注意: 使用该元素内通常含有一个或多个 <h2> ~ <h6> 之间的标签
 <section>
   子元素 or 文本内容
 </section>
@@ -34,6 +39,14 @@ order: 6
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+section {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

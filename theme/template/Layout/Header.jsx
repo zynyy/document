@@ -28,9 +28,8 @@ function initDocSearch() {
   }
   docsearch({
     appId: 'YZX024ZZ4G',
-    apiKey: '22c2812998810f1e406f2fa3e1724835',
-    indexName: 'hyl-doc',
-    facetFilters: ['firstname'],
+    apiKey: '1cb38cc8ca9b9f4ba880a97a98d75981',
+    indexName: 'hyl_doc',
     inputSelector: '#search-box input',
     debug: false, // Set debug to true if you want to inspect the dropdown
   });

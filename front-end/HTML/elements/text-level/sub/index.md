@@ -8,6 +8,16 @@ order: 26
 
 # `sub` 元素标签
 
+文本的下标，出于排版的目的,而不是出于样式的目的(请使用 CSS 的 inline 模块中的  `vertical-align` 样式属性)，通常是一些数学、物理公式等、化学元素等
+
+## 用法
+
+```html
+<sub>
+  文本内容 or 子元素
+</sub>
+```
+
 ## 子元素标签
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
@@ -22,6 +32,15 @@ order: 26
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+```
 
 ## ARIA 无障碍阅读
 

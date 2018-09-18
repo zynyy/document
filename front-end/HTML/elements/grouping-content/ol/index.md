@@ -8,6 +8,8 @@ order: 5
 
 # `ol` 元素标签
 
+表示多个有序列表项，通常渲染为有带编号的列表。可以通过 设置 属性 `type` 更改编号,亦可通过 CSS 的 lists 模块 中的 `list-style-type` 进行更改。更可以通过 CSS 的 `@counter-styles` 规则定制编号
+
 ## 用法
 
 ```html
@@ -31,6 +33,20 @@ order: 5
 | `reversed` | URL | 引用路径 |
 | `start` | URL | 引用路径 |
 | `type` | URL | 引用路径 |
+
+## CSS 默认样式
+
+```css
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+```
 
 ## ARIA 无障碍阅读
 

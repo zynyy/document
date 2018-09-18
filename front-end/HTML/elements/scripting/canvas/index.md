@@ -8,6 +8,8 @@ order: 4
 
 # `canvas` 元素标签
 
+可被用来通过脚本（通常是JavaScript）绘制图形
+
 ## 用法
 
 ```html
@@ -41,6 +43,10 @@ order: 4
 | ---- | ---- | ---- |
 | `width` | Number类型 + CSS 单位 | 标签的宽度, 优先级不如 CSS 的 width 样式属性 |
 | `height` | Number类型 + CSS 单位 | 标签的宽度, 优先级不如 CSS 的 height 样式属性 |
+
+## CSS 默认样式
+
+不存在任何默认样式
 
 ## ARIA 无障碍阅读
 

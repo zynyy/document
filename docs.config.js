@@ -108,12 +108,21 @@ module.exports = () => ({
       ui: 36,
       variables: 37,
       'will-change': 38,
-      'writing-modes': 39
+      'writing-modes': 39,
     },
   },
   javascript: {
-    categoryOrder: {},
-    typeOrder: {},
+    categoryOrder: {
+      BOM: 98,
+      DOM: 99,
+      ECMAScript: 100,
+    },
+    typeOrder: {
+      attribute: 1,
+      document: 2,
+      element: 3,
+      event: 4,
+    },
   },
   node: {
     categoryOrder: {},

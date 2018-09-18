@@ -8,6 +8,8 @@ order: 8
 
 # `dl` 元素标签
 
+零或多个术语描述组的描述列表。每个术语描述组由一个或多个术语(`<dt>`)以及一个或多个描述(`<dd>`),亦可使用`<div>`但二者不可共存
+
 ## 用法
 
 ```html
@@ -26,7 +28,7 @@ order: 8
 // 以上两者不可同时存在
 ```
 
-## 子元素
+## 子元素标签
 
 1. grouping: `<div>`、`<dt>`、`<dd>`
 1. scripting: `<script>`、`<template>`
@@ -34,6 +36,18 @@ order: 8
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+dl {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+```
 
 ## ARIA 无障碍阅读
 

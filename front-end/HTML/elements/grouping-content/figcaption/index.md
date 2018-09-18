@@ -8,9 +8,12 @@ order: 12
 
 # `figcaption` 元素标签
 
+`<figure>` 元素的标题,
+
 ## 用法
 
 ```html
+// 注意: 该标签在 <figure> 元素内则必须是第一个子元素或者最后一个子元素
 <figure>
   <figcaption>
     子元素 or 文本内容
@@ -38,6 +41,14 @@ order: 12
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+figcaption {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

@@ -8,6 +8,8 @@ order: 3
 
 # `colgroup` 元素标签
 
+对`<table>`元素中的列进行组合，以便对其进行格式化。
+
 ## 用法
 
 ```html
@@ -19,9 +21,9 @@ order: 3
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. tabular: `<col>`(如果 `colgroup` 元素标签不存在属性`span`)
 1. scripting: `<template>`
@@ -35,6 +37,14 @@ order: 3
 | ---- | ---- | ---- |
 | `span` | | |
 
+## CSS 默认样式
+
+```css
+colgroup {
+  display: table-column-group;
+}
+```
+
 ## ARIA 无障碍阅读
 
-> 没有任何角色和属性
+没有任何角色和属性

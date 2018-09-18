@@ -68,6 +68,15 @@ order: 1
 | `onunhandledrejection` | javascript方法名 | 针对未处理的 Promise 拒绝而引发 JavaScript 定义的方法  |
 | `onunload` | javascript方法名 | 当页面关闭后 触发 JavaScript 定义的方法 |
 
+## CSS 默认样式
+
+```css
+body {
+  display: block;
+  margin: 8px;
+}
+```
+
 ## DOM 接口(IDL)
 
 1. 基础 [HTMLElement]

@@ -8,6 +8,8 @@ order: 1
 
 # `form` 元素标签
 
+文档中的一个区域，这个区域包含有交互控制元素，用来向web后端提交信息。俗称 form 表单
+
 ## 用法
 
 ```html
@@ -18,7 +20,7 @@ order: 1
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、`<link rel=''>`(属性`rel`必须存在)
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -48,6 +50,15 @@ order: 1
 | `name` | | | |
 | `novalidate` | | | |
 | `target` | | | |
+
+## CSS 默认样式
+
+```css
+form {
+  display: block;
+  margin-top: 0em;
+}
+```
 
 ## ARIA 无障碍阅读
 

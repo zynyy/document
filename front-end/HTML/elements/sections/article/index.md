@@ -8,6 +8,10 @@ order: 5
 
 # `article` 元素标签
 
+表示文档、页面、应用或网站中的独立结构
+
+## 用法
+
 ```html
 <article>
   子元素 or 文本内容
@@ -16,10 +20,10 @@ order: 5
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、 `<link rel=''>`(属性`rel`必须存在)
-1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
+1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
 1. scripting: `<script>`、`<noscript>`、`<canvas>`、`<template>`
 1. tabular: `<table>`
 1. grouping: `<blockquote>`、`<div>`、`<dl>`、`<fieldset>`、`<figure>`、`<hr>`、`<ol>`、`<p>`、`<pre>`、`<ul>`
@@ -34,6 +38,14 @@ order: 5
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+article {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

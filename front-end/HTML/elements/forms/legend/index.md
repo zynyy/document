@@ -8,6 +8,8 @@ order: 14
 
 # `legend` 元素标签
 
+`<fieldset>` 元素设置分组标题
+
 ## 用法
 
 ```html
@@ -36,6 +38,20 @@ order: 14
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+legend {
+  display: block;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+```
 
 ## ARIA 无障碍阅读
 

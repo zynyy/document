@@ -11,7 +11,9 @@ order: 1
 
 # `dialog` 元素标签
 
-> 慎用该标签
+一个对话框或其他交互式组件,如一些警告框之类的
+
+> 该标签在 HTML5.2 标准新加入的。如需兼容请下载[dialog-polyfill](https://github.com/GoogleChrome/dialog-polyfill)
 
 ## 用法
 
@@ -22,8 +24,6 @@ order: 1
 ```
 
 ## 子元素标签
-
->带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、`<link>`
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -46,6 +46,41 @@ order: 1
 | 属性 | 值 | 描述 |
 | ---- | ---- | ---- |
 | `open` | URL | 引用路径 |
+
+## CSS 默认样式
+
+```css
+// 没有属性 open 是隐藏的
+dialog:not([open]) {
+  display: none;
+}
+
+dialog {
+  display: block;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: fit-content;
+  height: fit-content;
+  color: black;
+  margin: auto;
+  border-width: initial;
+  border-style: solid;
+  border-color: initial;
+  border-image: initial;
+  padding: 1em;
+  background: white;
+}
+// ::backdrop 是伪元素
+dialog::backdrop {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.1);
+}
+```
 
 ## ARIA 无障碍阅读
 

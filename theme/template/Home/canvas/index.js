@@ -111,7 +111,7 @@ class Canvas {
           this.dots[i].setAlpha(Math.max(0.9, (1 - distance / 300) * 2));
 
           this.dots[i].setSize(
-            Math.min(2, Math.random() * (1 - distance / this.stage.width))
+            Math.min(2, Math.random() * (1 - distance / this.stage.width)),
           );
           this.dots[i].update(delta);
           if (this.wave) {
@@ -186,7 +186,7 @@ class Canvas {
 
         this.dots[i].setSpeed(
           (distX / distance / 20) * ((Math.random() + 0.1) * 0.2),
-          (distY / distance / 20) * ((Math.random() + 0.1) * 0.2)
+          (distY / distance / 20) * ((Math.random() + 0.1) * 0.2),
         );
       }
       this.calibrated = true;

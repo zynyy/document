@@ -29,14 +29,16 @@ order: 2
 1. SVGElement: `<svg>`
 1. MathMLElement: `<math>`
 
-
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式属性
+
+> 不存在默认样式
 
 ## ARIA 无障碍阅读
 
 | 属性 | 隐式角色 | 可能存在角色、特征、状态 |
 | ---- | ---- | ---- |
 | | 无 | Roles: 任何角色。 <br> aria-*: 全局属性以及角色所对应的私有属性 |
-

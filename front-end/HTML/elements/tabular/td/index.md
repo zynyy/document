@@ -8,6 +8,8 @@ order: 10
 
 # `td` 元素标签
 
+`<table>` 元素的单元格。
+
 ## 用法
 
 ```html
@@ -20,9 +22,9 @@ order: 10
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、`<link>`
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -47,6 +49,15 @@ order: 10
 | `colspan` | | |
 | `rowspan` | | |
 | `headers` | | |
+
+## CSS 默认样式
+
+```css
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+```
 
 ## ARIA 无障碍阅读
 

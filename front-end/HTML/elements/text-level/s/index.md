@@ -8,7 +8,15 @@ order: 21
 
 # s 元素标签
 
-表示不再准确或不再相关内容
+表示不再准确或不再相关内容。比如商品的新旧价格
+
+## 用法
+
+```html
+<s>
+  子元素 or 文本内容
+</s>
+```
 
 ## 子元素标签
 
@@ -21,13 +29,17 @@ order: 21
 1. SVGElement: `<svg>`
 1. MathMLElement: `<math>`
 
-## 默认样式
-
-1. 删除线
-
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+s {
+  text-decoration: line-through;
+}
+```
 
 ## ARIA 无障碍阅读
 

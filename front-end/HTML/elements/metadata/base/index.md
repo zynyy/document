@@ -31,6 +31,9 @@ order: 6
 | `herf` | URL | 为元素标签属性`href`的值是相对地址提供的基础URL |
 | `target` | `_self`、`_blank`、`_parent` or `_top` | `_parent` 和 `_top` 如果不是 `<iframe>`、`<object>` 元素标签引入的那么和 `_sele` 表现的一样 |
 
+## CSS 默认样式
+
+> 无 CSS 样式
 
 ## DOM 接口(IDL)
 

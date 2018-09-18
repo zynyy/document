@@ -8,7 +8,9 @@ order: 4
 
 # `aside` 元素标签
 
-与内容页面关联度较低的内容,通常位于文章内容的两侧,
+表示与内容页面关联度较低的内容,通常位于文章内容的两侧,
+
+## 用法
 
 ```html
 <aside>
@@ -18,7 +20,7 @@ order: 4
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、 `<link rel=''>`(属性`rel`必须存在)
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -36,6 +38,14 @@ order: 4
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+aside {
+  display: block;
+}
+```
 
 ## DOM 接口(IDL)
 

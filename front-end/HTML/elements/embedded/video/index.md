@@ -8,6 +8,8 @@ order: 10
 
 # `video` 元素标签
 
+文档中嵌入视频内容
+
 ## 用法
 
 ```html
@@ -48,6 +50,14 @@ order: 10
 | `controls` | | |
 | `width` | | |
 | `height` | | |
+
+## CSS 默认样式
+
+```css
+video {
+  object-fit: contain;
+}
+```
 
 ## ARIA 无障碍阅读
 

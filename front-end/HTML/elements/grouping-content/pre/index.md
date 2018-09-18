@@ -8,6 +8,8 @@ order: 7
 
 # `pre` 元素标签
 
+定义预格式文本。即会保留空格和换行符。文本显现为等宽字体。
+
 ## 用法
 
 ```html
@@ -32,6 +34,17 @@ order: 7
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0px;
+}
+```
 
 ## ARIA 无障碍阅读
 

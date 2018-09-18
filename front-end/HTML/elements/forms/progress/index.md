@@ -8,6 +8,8 @@ order: 11
 
 # `progress` 元素标签
 
+用来显示一项任务的完成进度
+
 ## 用法
 
 ```html
@@ -38,6 +40,21 @@ order: 11
 | ---- | ---- | ---- |
 | `value` | | |
 | `max` | | |
+
+## CSS 默认样式
+
+```css
+progress {
+  display: table-cell;
+  box-sizing: border-box;
+  height: 1em;
+  width: 10em;
+  vertical-align: -0.2em;
+  writing-mode: horizontal-tb !important;
+  appearance: progress-bar;
+}
+
+```
 
 ## ARIA 无障碍阅读
 

@@ -8,6 +8,8 @@ order: 12
 
 # `meter` 元素标签
 
+用来显示已知范围的标量值或者分数值。
+
 ## 用法
 
 ```html
@@ -42,6 +44,21 @@ order: 12
 | `low` | | |
 | `high` | | |
 | `optimum` | | |
+
+## CSS 默认样式
+
+```css
+meter {
+  display: table-cell;
+  height: 1em;
+  width: 5em;
+  box-sizing: border-box;
+  vertical-align: -0.2em;
+  -webkit-user-modify: read-only !important;
+  writing-mode: horizontal-tb !important;
+  appearance: meter;
+}
+```
 
 ## ARIA 无障碍阅读
 

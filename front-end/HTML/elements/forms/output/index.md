@@ -8,6 +8,8 @@ order: 10
 
 # `output` 元素标签
 
+计算或用户操作的结果
+
 ## 用法
 
 ```html
@@ -18,7 +20,7 @@ order: 10
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
 1. scripting: `<script>`、`<noscript>`、`<canvas>`、`<template>`
@@ -39,6 +41,15 @@ order: 10
 | `for` | | |
 | `form` | | |
 | `name` | | |
+
+## CSS 默认样式
+
+```css
+output {
+  unicode-bidi: isolate;
+  display: inline;
+}
+```
 
 ## ARIA 无障碍阅读
 

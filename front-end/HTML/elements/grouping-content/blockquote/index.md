@@ -8,6 +8,8 @@ order: 13
 
 # `blockquote` 元素标签
 
+另一个源引用内容。即复制另外一段的内容。
+
 ## 用法
 
 ```html
@@ -18,7 +20,7 @@ order: 13
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+> 带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、`<link rel=''>`(属性`rel`必须存在)
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -40,7 +42,19 @@ order: 13
 
 | 属性 | 值 | 描述 |
 | ---- | ---- | ---- |
-| `cite` | URL | 引用路径 |
+| `cite` | URL | 引用内容的地址 |
+
+## CSS 默认样式
+
+```css
+blockquote {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+```
 
 ## ARIA 无障碍阅读
 

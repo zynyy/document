@@ -8,6 +8,8 @@ order: 1
 
 # `table` 元素标签
 
+表示表格数据
+
 ## 用法
 
 ```html
@@ -16,7 +18,7 @@ order: 1
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
 1. tabular: `<caption>`、`<colgroup>`、`<thead>`、`<tbody>`、`<tfoot>`、`<tr>`
 1. scripting: `<script>`、`<template>`
@@ -29,6 +31,17 @@ order: 1
 | 属性 | 值 | 描述 |
 | ---- | ---- | ---- |
 | `border` | | |
+
+## CSS 默认样式
+
+```css
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+```
 
 ## ARIA 无障碍阅读
 

@@ -37,9 +37,13 @@ order: 7
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
 
-## 默认样式
+## CSS 默认样式
 
-1. 斜体
+```css
+cite {
+  font-style: italic;
+}
+```
 
 ## ARIA 无障碍阅读
 

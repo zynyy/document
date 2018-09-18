@@ -19,17 +19,25 @@ order: 8
 
 “渲染引擎”(Rendering Engine)，不过我们也常称其为“排版引擎”。常见的浏览器内核有很多个，如 Gecko、Trident、Webkit、Blink 等等，它的作用负责 HTML、CSS、图片等静态资源的渲染，正因为每家的内核对网页代码的解释有不同的地方，所以才会出现同一个页面在不同内核的浏览器下显示的不一样。
 
-| 浏览器 | logo | 渲染引擎 | js引擎 | github |
+| 浏览器 | logo | 渲染引擎 | js引擎 | github | CSS私有前缀 |
 | ---- | :----: | :---- | :---: | --- |
-| IE | ![IE / Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_24x24.png) | Trident(MSHTML) | Chakra | |
-| Edge | ![IE / Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_24x24.png) | EdgeHTML | Chakra | |
-| Firefox | ![Gecko](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_24x24.png) | Gecko | | [mozilla/gecko] |
-| Chrome | ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_24x24.png) | Chromium(Blink) | [V8] |[chromium/chromium] |
-| Safari | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_24x24.png) | Webkit | JavaScriptCore | [WebKit/webkit] |
+| IE | ![IE / Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_24x24.png) | Trident(MSHTML) | |Chakra |  `-ms-` |
+| Edge | ![IE / Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_24x24.png) | EdgeHTML | Chakra | | `-ms-` |
+| Firefox | ![Gecko](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_24x24.png) | Gecko | | [mozilla/gecko]  | `-moz-` |
+| Chrome | ![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_24x24.png) | Chromium(Blink) | [V8] |[chromium/chromium] | `-webkit-` |
+| Safari | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_24x24.png) | Webkit | JavaScriptCore | [WebKit/webkit] | `-webkit-` |
+| opera | ![opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_24x24.png) | Presto |  | | `-o-`、`-webkit-` |
 
+> opera 浏览器自2013年后放弃了自己内核 Presto 改用 webkit
+>
 > 国内浏览器基本都是双核浏览器其中一核便是 Chromium，美其名曰 “极速模式” 另外一个核便是 Trident，美其名曰 “兼容模式”。
 >
 > Firefox和Safari浏览器js引擎暂时未找到比较可靠的资料来源。
+
+## CSS 默认样式(user agent stylesheet)
+
+1. webkit: <https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css>
+1. Gecko: 浏览器地址输入 `resource://gre-resources/html.css`<https://dxr.mozilla.org/>
 
 ## 渲染引擎来源
 

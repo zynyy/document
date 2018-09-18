@@ -2,7 +2,7 @@
     "name": "test",
     "version": "18.06.25",
     "scripts": {
-        "start": "bisheng start",
+        "start": "npm run clear && bisheng start",
         "clear": "shx rm -rf _site",
         "build:deploy": " cross-env NODE_ENV=production PLATFORM=github bisheng build --ssr",
         "build": " cross-env NODE_ENV=production bisheng build --ssr",

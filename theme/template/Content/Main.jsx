@@ -8,7 +8,7 @@ import {
 
 import AnchorLink from 'antd/lib/anchor/AnchorLink';
 
-import { docModule } from '../utils';
+import { docModule, uriPath } from '../utils';
 import LeftSide from './LeftSide';
 
 import HTMLContent from './HTMLDocument';
@@ -23,7 +23,7 @@ const getModuleData = (props) => {
   const { index } = params;
   const moduleData = picked[index];
   if (moduleData) {
-    return moduleData.filter(({ meta }) => meta.filename.endsWith('.md'))
+    return moduleData.filter(({ meta }) => meta.filename.endsWith('.md'));
   }
   console.error(`请到theme/index.js里面的picked配置${index}`);
   return [];
@@ -154,12 +154,11 @@ export default class MainContent extends React.Component {
       demos,
     } = props;
 
-    const { anchors, prev, next  } = state;
+    const { anchors, prev, next } = state;
     const moduleName = params.index;
     const moduleData = getModuleData(props);
     const sideConf = props.themeConfig[moduleName];
     const activeMenuItem = location.pathname;
-
     return (
       <Layout>
 
@@ -243,12 +242,12 @@ export default class MainContent extends React.Component {
               <section className="prev-next-nav">
                 {
                   prev
-                    ? <Link className="prev-page" to={prev.filename.replace('.md', '')}>{prev.title || next.filename}</Link>
+                    ? <Link className="prev-page" to={uriPath(prev.filename)}>{prev.title || next.filename}</Link>
                     : null
                 }
                 {
                   next
-                    ? <Link className="next-page" to={next.filename.replace('.md', '')}>{next.title || next.filename}</Link>
+                    ? <Link className="next-page" to={uriPath(next.filename)}>{next.title || next.filename}</Link>
                     : null
                 }
               </section>

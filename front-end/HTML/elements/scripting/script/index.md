@@ -8,6 +8,8 @@ order: 2
 
 # `script` 元素标签
 
+用于嵌入或引用可执行脚本。
+
 ## 用法
 
 ```html
@@ -22,7 +24,7 @@ order: 2
 
 ## 子元素标签
 
->不存在任何子元素和文本内容,只能是脚本内容或者引入外部脚本
+不存在任何子元素和文本内容,只能是脚本内容或者引入外部脚本
 
 ## 属性
 
@@ -40,6 +42,14 @@ order: 2
 | `defer` | Boolean类型 | 浏览器会异步的下载该文件并且不会影响到后续DOM的渲染； |
 | `crossorigin` | [详见](/front-end/HTML/elements/metadata/meta/index#anchor-策略值) | 安全策略 |
 | `nonce` | 加密随机数 | 安全策略 |
+
+## CSS 默认样式
+
+```css
+script {
+  display: none;
+}
+```
 
 ## ARIA 无障碍阅读
 

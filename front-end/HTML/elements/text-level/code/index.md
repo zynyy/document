@@ -8,12 +8,22 @@ order: 8
 
 # `code` 元素标签
 
+呈现一段计算机代码,如果想要展示 HTML 标签请使用 实体符 `&lt;code&gt;`包着,如果之间写`<code>`会被浏览器解析
+
 ## 用法
 
 ```html
+// 行内代码
 <code>
-  子元素 or 文本内容
+  子元素 or 计算机源码
 </code>
+
+// 代码块
+<pre>
+  <code>
+    子元素 or 计算机源码
+  </code>
+</pre>
 ```
 
 ## 子元素标签
@@ -30,6 +40,14 @@ order: 8
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+code {
+  font-family: monospace;
+}
+```
 
 ## ARIA 无障碍阅读
 

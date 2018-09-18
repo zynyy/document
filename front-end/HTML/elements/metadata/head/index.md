@@ -30,6 +30,14 @@ order: 1
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
 
+## CSS 默认样式
+
+```css
+head {
+  display: none;
+}
+```
+
 ## DOM 接口(IDL)
 
 1. 基础 [HTMLElement]

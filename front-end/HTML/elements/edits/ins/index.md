@@ -7,7 +7,9 @@ anchor: the-ins-element
 
 # `ins` 元素标签
 
-## 基本结构
+新插入到文档的内容,即在旧有的文档上进行更改添加
+
+## 用法
 
 ```html
 <ins>
@@ -39,6 +41,18 @@ anchor: the-ins-element
 | ---- | ---- | --- |
 | `cite` | RUL | |
 | `datetime` | 时间格式 | 标注更改时间 |
+
+## CSS 默认样式
+
+```css
+ins {
+  text-decoration: underline;
+}
+```
+
+## javascript
+
+1. DOM: [HTMLModElement]()
 
 ## ARIA 无障碍阅读
 

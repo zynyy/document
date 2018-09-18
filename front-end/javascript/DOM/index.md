@@ -1,6 +1,6 @@
 ---
-title: DOM
-category: DOM
+title: 文档对象
+order: 2
 ---
 
 # DOM 文档对象模型

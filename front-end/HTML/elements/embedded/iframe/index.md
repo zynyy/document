@@ -2,13 +2,15 @@
 title: <iframe>
 category: element
 type: semantics-embedded-content
-acnhor: the-iframe-element
+anchor: the-iframe-element
 order: 6
 ---
 
 # `iframe` 元素标签
 
-## 基本结构
+嵌套的浏览上下文，有效地将另一个HTML页面嵌入到当前页面中。
+
+## 用法
 
 ```html
 <iframe src=''></iframe>
@@ -16,7 +18,7 @@ order: 6
 
 ## 子元素标签
 
-> 该标签不存在任何子元素和文本内容
+该标签不存在任何子元素和文本内容
 
 ## 属性
 
@@ -32,6 +34,17 @@ order: 6
 | `allowfullscreen` | | |
 | `width` | | |
 | `height` | | |
+
+## CSS 默认样式
+
+```css
+iframe {
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+```
 
 ## ARIA 无障碍阅读
 

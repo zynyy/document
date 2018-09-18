@@ -10,6 +10,8 @@ order: 2
 
 定义文档的页眉(介绍信息)表示一组引导性的帮助，可能包含标题元素，也可以包含其他元素，像logo、导航、搜索表单等。通常高度不会超过 100px
 
+## 用法
+
 ```html
 <header>
   子元素 or 文本内容
@@ -18,7 +20,7 @@ order: 2
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、 `<link rel=''>`(属性`rel`必须存在)
 1. sections: `<aside>`、`<article>`、`<nav>`、`<section>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -36,6 +38,14 @@ order: 2
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+header {
+  display: block;
+}
+```
 
 ## DOM 接口(IDL)
 

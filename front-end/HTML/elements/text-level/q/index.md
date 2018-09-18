@@ -7,7 +7,7 @@ order: 15
 ---
 # q 元素标签
 
-定义一个短的引用
+定义一个短的引用,即引用别人的一句话。如果是一段请用`<blockquote>`
 
 ## 用法
 
@@ -37,7 +37,24 @@ order: 15
 | --- | --- | --- |
 | `cite` | URL | 定义引用的出处或来源 |
 
-## 默认样式
+## CSS 默认样式
 
-1. 内联
-1. 使用伪类`after`,`before`添加引号
+```css
+q {
+  display: inline;
+}
+
+q::before {
+  content: open-quote;
+}
+
+q::after {
+  content: close-quote;
+}
+```
+
+## ARIA 无障碍阅读
+
+| 属性 | 隐式角色 | 可能存在角色、特征、状态 |
+| ---- | ---- | ---- |
+| | 无 | Roles: 任何角色 <br> aria-*: 全局属性以及角色所对应的私有属性 |

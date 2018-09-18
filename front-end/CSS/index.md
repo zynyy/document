@@ -19,7 +19,15 @@ selectors {
 }
 ```
 
-## CSS 用法
+## CSS 来源
+
+1. user agent stylesheet 即浏览器默认样式
+1. author style stylesheet 即前端开发人员定义的
+1. user style sheets 即用户自定义的(如 AdBlock、stylish 插件)
+
+这三种优先级: 用户 > 开发 > 默认;
+
+## CSS 开发用法
 
 1. 可以写在扩展名为 .css 的文件中。然后用 HTML 的 `<link>` 标签引入。称为外部样式
 1. 也可以写在 HTML 的 `<style>` 标签内。称为嵌入式样式
@@ -44,7 +52,7 @@ selectors {
 | --- | --- | --- |
 | CSS1.0 | 1996年11月 | |
 | CSS2.0 | 1998年5月  | |
-| CSS3.0 | 制定1999年 | 该版本是以 CSS2模块为基础, 以 CSS2.1规范为核心。每个模块增、换功能 |
+| CSS3.0 | 制定1999年 | 该版本是以 CSS2 模块为基础, 以 CSS2.1规范为核心。每个模块增、换功能 |
 | CSS4.0 |  | CSS4.0没有这个级别只有独立的模块可以达到4.0甚至更高级别 |
 
 <https://www.w3.org/Style/CSS/Overview.en.html>

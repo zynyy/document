@@ -11,6 +11,8 @@ order: 2
 
 # `summary` 元素标签
 
+作为`<details>`元素的第一个子元素,代表为一个内容的摘要，标题或图例。
+
 ```html
 <details>
   // 要么
@@ -26,7 +28,7 @@ order: 2
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. heading: `<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
 1. metadata:  `<link rel=''>`(属性`rel`必须存在)
@@ -41,6 +43,14 @@ order: 2
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+summary {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

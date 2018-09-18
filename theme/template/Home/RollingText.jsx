@@ -76,6 +76,9 @@ export default class RollingText extends React.Component {
 RollingText.propTypes = {
   // className: PropTypes.string.isRequired,
   // style: PropTypes.string.isRequired,
-  children: PropTypes.shape().isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.array,
+  ]).isRequired,
   updateCheck: PropTypes.string.isRequired,
 };

@@ -2,10 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Media from 'react-media';
 import DocumentTitle from 'react-document-title';
+import classnames from 'classnames';
 
-import Fullscreen from './common/Fullscreen';
-import Container from './common/Centered';
-import Relative from './common/Relative';
 import Background from './Background';
 import getScrollPos from './canvas/scroll';
 import Cubes from './Cubes';
@@ -64,14 +62,14 @@ export default class Home extends React.Component {
     const doc = docs[docsIndex];
     return (
       <DocumentTitle title="学习成长笔记">
-        <Relative>
-          <Fullscreen>
+        <div className="relative">
+          <div className="fullscreen">
             <Background
               templateIndex={docsIndex}
               template={doc}
               setCanvas={this.setCanvas}
             />
-            <Container horizontal>
+            <div className={classnames('centered', 'horizontal')}>
               <DocsTitle template={doc} />
               <Media query="(min-width: 1280px)">
                 <Cubes
@@ -81,9 +79,9 @@ export default class Home extends React.Component {
                   setTemplate={this.selectTemplate}
                 />
               </Media>
-            </Container>
-          </Fullscreen>
-        </Relative>
+            </div>
+          </div>
+        </div>
       </DocumentTitle>
     );
   }

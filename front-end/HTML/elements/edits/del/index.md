@@ -7,7 +7,9 @@ anchor: the-del-element
 
 # `del` 元素标签
 
-## 基本结构
+从文档中删除的内容。
+
+## 用法
 
 ```html
 <del>
@@ -39,6 +41,14 @@ anchor: the-del-element
 | ---- | ---- | --- |
 | `cite` | RUL | |
 | `datetime` | 时间格式 | 标注删除时间 |
+
+## CSS 默认样式
+
+```css
+del {
+  text-decoration: line-through;
+}
+```
 
 ## ARIA 无障碍阅读
 

@@ -8,23 +8,25 @@ order: 8
 
 # `option` 元素标签
 
+`<select>` 元素中的选项,亦或者是 `<detalist>` 元素中的列表
+
 ## 用法
 
 ```html
 <select>
-  <option>
+  <option value=''>
     文本内容
   </option>
   or
   <optgroup>
-    <option>
+    <option value=''>
       文本内容
     </option>
   </optgroup>
 </select>
 or
 <datalist>
-  <option>
+  <option value=''>
     文本内容
   </option>
 </datalist>
@@ -32,7 +34,7 @@ or
 
 ## 子元素标签
 
->不存在任何子元素标签
+不存在任何子元素标签
 
 ## 属性
 
@@ -45,6 +47,18 @@ or
 | `label` | | |
 | `selected` | | |
 | `value` | | |
+
+## CSS 默认样式
+
+```css
+option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+```
 
 ## ARIA 无障碍阅读
 

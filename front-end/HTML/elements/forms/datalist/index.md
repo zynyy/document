@@ -8,6 +8,8 @@ order: 6
 
 # `datalist` 元素标签
 
+定义选项列表, 可与 `<input>` 必须具有 `list` 属性的元素一起使用
+
 ## 用法
 
 ```html
@@ -42,6 +44,14 @@ order: 6
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+datalist {
+  display: none;
+}
+```
 
 ## ARIA 无障碍阅读
 

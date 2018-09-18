@@ -8,6 +8,8 @@ order: 10
 
 # `dd` 元素标签
 
+定义列表一个术语声明的描述。前面至少一个 `<dt>` 元素
+
 ## 用法
 
 ```html
@@ -39,6 +41,15 @@ order: 10
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+dd {
+  display: block;
+  margin-inline-start: 40px;
+}
+```
 
 ## ARIA 无障碍阅读
 

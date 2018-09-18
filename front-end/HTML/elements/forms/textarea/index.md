@@ -8,6 +8,8 @@ order: 9
 
 # `textarea` 元素标签
 
+一个多行纯文本编辑。
+
 ## 用法
 
 ```html
@@ -18,7 +20,7 @@ order: 9
 
 ## 子元素标签
 
-> 不存在任何子元素
+不存在任何子元素,就算写有 HTML 标签也只会被当做文本处理
 
 ## 属性
 
@@ -42,6 +44,39 @@ order: 9
 | `required` | | |
 | `rows` | | |
 | `wrap` | | |
+
+## CSS 默认样式
+
+```css
+textarea {
+  display: inline-block;
+  font: 400 13.3333px Arial;
+  font-family: monospace;
+  color: initial;
+  text-rendering: auto;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  background-color: white;
+  padding: 2px;
+  margin: 0em;
+  flex-direction: column;
+  resize: auto;
+  cursor: text;
+  overflow-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(169, 169, 169);
+  white-space: pre-wrap;
+  letter-spacing: normal;
+  word-spacing: normal;
+  writing-mode: horizontal-tb !important;
+  appearance: textarea;
+  -webkit-rtl-ordering: logical;
+}
+```
 
 ## ARIA 无障碍阅读
 

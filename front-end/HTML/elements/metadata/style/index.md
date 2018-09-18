@@ -35,9 +35,13 @@ order: 5
 | `media` | `all` | CSS媒体查询 | 规定媒体类型 |
 | `type` | `text/css` | MIME类型 | 样式表的 MIME 类型 |
 
-## 嵌套规范
+## CSS 默认样式
 
-通常位于 `<head>` 标签之中, `<title>`之下。该标签可存在多个
+```css
+style {
+  display: none;
+}
+```
 
 ## DOM 接口(IDL)
 

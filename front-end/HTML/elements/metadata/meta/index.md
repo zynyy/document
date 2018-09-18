@@ -130,9 +130,13 @@ order: 2
 | \<URL\> | 设置其他协议 如 `data:`、`mediastream:`、`blob:`、`filesystem:` |
 | '\<sha256\>-\<base64\>' | 加载符合该加密策略的资源 |
 
-## 嵌套规范
+## CSS 默认样式
 
-位于 `<head>` 标签之中, `<title>` 标签之上。该标签可存在多个但属性`charset`只能存在有且一个
+```css
+meta {
+  display: none;
+}
+```
 
 ## DOM 接口(IDL)
 

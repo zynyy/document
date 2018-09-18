@@ -8,9 +8,12 @@ order: 11
 
 # `figure` 元素标签
 
+代表一段独立的内容,但内容应该与主内容相关,可用于注释插图，图表，照片，代码清单等
+
 ## 用法
 
 ```html
+// 注意: 如果子元素含义 <figcaption> 子元素，则代表 <figure> 元素的标题
 <figure>
   子元素 or 文本内容
 </figure>
@@ -22,7 +25,7 @@ order: 11
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
 1. scripting: `<script>`、`<noscript>`、`<canvas>`、`<template>`
 1. tabular: `<table>`
-1. grouping: `<blockquote>`、`<div>`、`<dl>`、`<fieldset>`、`<figure>`、`<hr>`、`<main>`、`<ol>`、`<p>`、`<pre>`、`<ul>`
+1. grouping: `<blockquote>`、`<div>`、`<dl>`、`<fieldset>`、`<figure>`、`<hr>`、`<main>`、`<ol>`、`<p>`、`<pre>`、`<ul>`、`<figcaption>`
 1. embedded: `<audio>`、`<video>`、`<img>`、`<map>`、`<iframe>`、`<embed>`、`<object>`、`<picture>`
 1. edit: `<ins>`、`<del>`
 1. interactive: `<details>`、`<dialog>`
@@ -34,6 +37,18 @@ order: 11
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+```
 
 ## ARIA 无障碍阅读
 

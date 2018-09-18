@@ -33,13 +33,16 @@ order: 11
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
 
+## CSS 默认样式
+
+```css
+em {
+  font-style: italic;
+}
+```
+
 ## ARIA 无障碍阅读
 
 | 属性 | 隐式角色 | 可能存在角色、特征、状态 |
 | ---- | ---- | ---- |
 | | 无 | Roles: 任何角色 <br> aria-*: 全局属性以及角色所对应的私有属性 |
-
-## 默认样式
-
-1. 斜体
-

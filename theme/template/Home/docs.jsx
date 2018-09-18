@@ -119,7 +119,7 @@ export default function Docs({ template }) {
 
         {
           Object.keys(index).map(key => (
-            <Buttons>
+            <Buttons key={key}>
               <Button
                 href={index[key]}
                 color={color}

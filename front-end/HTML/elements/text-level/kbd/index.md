@@ -8,9 +8,12 @@ order: 13
 
 # `kbd` 元素标签
 
+键盘输入组合
+
 ## 用法
 
 ```html
+// 注意: 如果存在子元素 <samp> 则表示系统输出。如果父元素是 <samp> 则表示输入，子元素 <kbd> 则代表键盘组合键
 <kbd>
   子元素 or 文本内容
 </kbd>
@@ -26,6 +29,14 @@ order: 13
 1. forms: `<button>`、`<input>`、`<meter>`、`<output>`、`<progress>`、`<select>`、`<textarea>`、`<label>`、`<datalist>`
 1. SVGElement: `<svg>`
 1. MathMLElement: `<math>`
+
+## CSS 默认样式
+
+```css
+kbd {
+  font-family: monospace;
+}
+```
 
 ## 属性
 

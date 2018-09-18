@@ -10,6 +10,14 @@ order: 30
 
 代表一个变量,这可以是数学表达式或编程上下文中的实际变量，表示常量的标识符，标识物理量的符号，函数参数，或者仅是用作散文中的占位符的术语。
 
+## 用法
+
+```html
+<var>
+  文本内容 or 子元素
+</var>
+```
+
 ## 子元素标签
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
@@ -24,6 +32,14 @@ order: 30
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+var {
+  font-style: italic;
+}
+```
 
 ## ARIA 无障碍阅读
 

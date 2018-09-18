@@ -8,6 +8,8 @@ order: 9
 
 # `th` 元素标签
 
+`<table>` 元素的单元格标题。
+
 ## 用法
 
 ```html
@@ -21,9 +23,9 @@ order: 9
 </table>
 ```
 
-## 子元素
+## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、`<link rel=''>`(属性`rel`必须存在)
 1. scripting: `<script>`、`<noscript>`、`<canvas>`、`<template>`
@@ -49,6 +51,15 @@ order: 9
 | `headers` | | |
 | `scope` | | |
 | `abbr` | | |
+
+## CSS 默认样式
+
+```css
+th {
+  display: table-cell;
+  vertical-align: inherit;
+}
+```
 
 ## ARIA 无障碍阅读
 

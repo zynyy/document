@@ -1,5 +1,6 @@
 ---
-title: javascrpt
+title: javascrpt介绍
+order: 1
 ---
 
 # javascript

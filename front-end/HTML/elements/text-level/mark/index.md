@@ -8,6 +8,8 @@ order: 14
 
 # `mark` 元素标签
 
+标记或突出显示的一个文档中的一行文本以供参考。突显出上下文的关联性
+
 ## 用法
 
 ```html
@@ -30,6 +32,15 @@ order: 14
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+mark {
+  background-color: yellow;
+  color: black;
+}
+```
 
 ## ARIA 无障碍阅读
 

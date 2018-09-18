@@ -8,6 +8,8 @@ order: 13
 
 # `fieldset` 元素标签
 
+表单中的元素进行分组
+
 ## 用法
 
 ```html
@@ -43,6 +45,26 @@ order: 13
 | `disabled` | | | |
 | `form` | | | |
 | `name` | | | |
+
+## CSS 默认样式
+
+```css
+fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-width: -webkit-min-content;
+  border-width: 2px;
+  border-style: groove;
+  border-color: rgb(192, 192, 192);
+  border-image: initial;
+}
+
+```
 
 ## ARIA 无障碍阅读
 

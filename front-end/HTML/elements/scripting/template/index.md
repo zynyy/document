@@ -8,11 +8,13 @@ order: 5
 
 # `template` 元素标签
 
+用于模板声明可以通过脚本（通常是JavaScript）克隆并插入到文档中的HTML片段。
+
 ## 用法
 
 ```html
 // 注意：该标签不会立即渲染，作为一个模板。需要 javascript 调用
-<template>
+<template id=''>
   子元素
 </template>
 ```
@@ -37,6 +39,14 @@ order: 5
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+template {
+  display: none;
+}
+```
 
 ## ARIA 无障碍阅读
 

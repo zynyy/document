@@ -8,7 +8,15 @@ order: 25
 
 # strong 元素标签
 
-表示其内容的重要性，严肃性或紧迫性。
+表示其内容在上下的重要性，严肃性或紧迫性。
+
+## 用法
+
+```html
+<strong>
+  文本内容 or 子元素
+</strong>
+```
 
 ## 子元素标签
 
@@ -21,13 +29,17 @@ order: 25
 1. SVGElement: `<svg>`
 1. MathMLElement: `<math>`
 
-## 默认样式
-
-1. 粗体
-
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+strong {
+  font-weight: bold;
+}
+```
 
 ## ARIA 无障碍阅读
 

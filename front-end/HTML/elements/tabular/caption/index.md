@@ -8,6 +8,8 @@ order: 2
 
 # `caption` 元素标签
 
+`<table>`元素的标题,可通过 CSS 的 tables 模块中的 `caption-side` 来设置标题位置
+
 ## 用法
 
 ```html
@@ -19,9 +21,7 @@ order: 2
 </table>
 ```
 
-## 子元素
-
->带有括号的元素必须满足括号内的条件才可以使用
+## 子元素标签
 
 1. metadata: `<style>`、`<link>`
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h1>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -38,6 +38,15 @@ order: 2
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+caption {
+  display: table-caption;
+  text-align: center;
+}
+```
 
 ## ARIA 无障碍阅读
 

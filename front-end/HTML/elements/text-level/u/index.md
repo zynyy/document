@@ -8,6 +8,16 @@ order: 29
 
 # `u` 元素标签
 
+将文本标记为应用了某种形式的非文本注释
+
+## 用法
+
+```html
+<u>
+  子元素 or 文本内容
+</u>
+```
+
 ## 子元素标签
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
@@ -22,6 +32,14 @@ order: 29
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+u {
+  text-decoration: underline;
+}
+```
 
 ## ARIA 无障碍阅读
 

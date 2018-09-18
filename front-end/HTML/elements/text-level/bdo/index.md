@@ -8,6 +8,8 @@ order: 5
 
 # `bdo` 元素标签
 
+双向覆盖元素,用于覆盖当前文本的朝向，它使得字符按给定的方向排列。
+
 ## 用法
 
 ```html
@@ -30,6 +32,14 @@ order: 5
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性),其中属性 `dir` 属性相对于其他标签比较特殊
+
+## CSS 默认样式
+
+```css
+bdo {
+  unicode-bidi: bidi-override;
+}
+```
 
 ## ARIA 无障碍阅读
 

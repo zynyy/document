@@ -8,6 +8,8 @@ order: 4
 
 # `ul` 元素标签
 
+多项的无序列表，即无数值排序项的集合，且它们在列表中的顺序是没有意义的。通常情况下，无序列表项的头部可以是几种形式，如一个点，一个圆形或方形，亦可通过 CSS 的 lists 模块 中的 `list-style-type` 进行更改
+
 ## 用法
 
 ```html
@@ -24,6 +26,20 @@ order: 4
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+```
 
 ## ARIA 无障碍阅读
 

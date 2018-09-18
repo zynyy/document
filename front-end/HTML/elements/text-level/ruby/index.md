@@ -30,13 +30,17 @@ order: 20
 1. SVGElement: `<svg>`
 1. MathMLElement: `<math>`
 
-## 默认样式
-
-1. 缩进 0 px
-
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+ruby {
+    text-indent: 0px;
+}
+```
 
 ## ARIA 无障碍阅读
 

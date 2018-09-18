@@ -1,6 +1,6 @@
 ---
-title: 浏览器对象模型
-category: BOM
+title: 浏览器对象
+order: 3
 ---
 
 # BOM

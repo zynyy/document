@@ -8,7 +8,15 @@ order: 23
 
 # `small` 元素标签
 
-表示侧面评论,旁注,呈现小号字体效果
+表示侧面评论,旁注
+
+## 用法
+
+```html
+<small>
+  文本内容 or 子元素
+</small>
+```
 
 ## 子元素标签
 
@@ -21,13 +29,17 @@ order: 23
 1. SVGElement: `<svg>`
 1. MathMLElement: `<math>`
 
-## 默认样式
-
-1. 小字体
-
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+small {
+  font-size: smaller;
+}
+```
 
 ## ARIA 无障碍阅读
 

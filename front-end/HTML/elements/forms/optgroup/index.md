@@ -8,6 +8,8 @@ order: 7
 
 # `optgroup` 元素标签
 
+创建包含在一个`<select>`元素中的一组选项
+
 ## 用法
 
 ```html
@@ -31,6 +33,15 @@ order: 7
 | --- | --- | --- | --- |
 | `disabled` |
 | `label` |
+
+## CSS 默认样式
+
+```css
+optgroup {
+  font-weight: bolder;
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 

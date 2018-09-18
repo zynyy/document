@@ -8,6 +8,16 @@ order: 24
 
 # `span` 元素标签
 
+通用型的行内容器，并没有任何特殊语义。可以通过全局属性 `class`、`id`、`dir`
+
+## 用法
+
+```html
+<span>
+  文本内容 or 子元素
+</span>
+```
+
 ## 子元素标签
 
 1. metadata: `<link rel=''>`(属性`rel`必须存在)
@@ -22,6 +32,10 @@ order: 24
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+不存在默认样式
 
 ## ARIA 无障碍阅读
 

@@ -8,6 +8,10 @@ order: 3
 
 # `nav` 元素标签
 
+表示一个含有多个超链接的区域，这个区域包含转到其他页面，或者页面内部其他部分的链接列表.
+
+## 用法
+
 ```html
 <nav>
   子元素 or 文本内容
@@ -16,7 +20,7 @@ order: 3
 
 ## 子元素标签
 
->带有括号的元素必须满足括号内的条件才可以使用
+带有括号的元素必须满足括号内的条件才可以使用
 
 1. metadata: `<style>`、 `<link rel=''>`(属性`rel`必须存在)
 1. sections: `<aside>`、`<article>`、`<footer>`、`<header>`、`<nav>`、`<section>`、`<h2>`、`<h3>`、`<h4>`、`<h5>`、`<h6>`
@@ -34,6 +38,14 @@ order: 3
 ## 属性
 
 * [全局属性](/front-end/HTML/attribute#anchor-全局属性)
+
+## CSS 默认样式
+
+```css
+nav {
+  display: block;
+}
+```
 
 ## ARIA 无障碍阅读
 
