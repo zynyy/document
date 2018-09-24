@@ -1,5 +1,5 @@
 ---
-title: ECMAScript
+title: ECMA-262
 order: 4
 ---
 

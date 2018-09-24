@@ -4,13 +4,11 @@ category: property
 type: align
 ---
 
-# align
+# align-content 介绍
 
-| 样式 | 值 | 适用范围 | 描述 |
-| --- | ---- | ---- | --- |
-| `justify-content` | | | |
-| `align-content` | | | |
-| `justify-self` | | | |
-| `align-self` | | | |
-| `justify-items` | | | |
-| `align-items` | | | |
+## 适用标签
+
+## 有效值
+
+| 值 | 默认 | 描述 |
+| --- | --- | ---- |

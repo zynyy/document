@@ -13,7 +13,7 @@
         "eslint-fix": "eslint --fix theme/ --ext .js,.jsx"
     },
     "dependencies": {
-        "antd": "^3.6.5",
+        "antd": "^3.9.2",
         "bisheng": "^0.29.0",
         "bisheng-plugin-anchor": "^10.0.0",
         "bisheng-plugin-division": "^1.0.1",
@@ -31,6 +31,7 @@
         "react-codemirror2": "^5.1.0",
         "react-copy-to-clipboard": "^5.0.1",
         "react-document-title": "^2.0.3",
+        "react-loadable": "^5.5.0",
         "react-media": "^1.8.0",
         "react-virtualized": "^9.20.1",
         "remark": "^9.0.0",
@@ -41,6 +42,7 @@
     "devDependencies": {
         "@types/node": "^10.9.4",
         "babel-eslint": "^8.0.2",
+        "babel-plugin-dynamic-import-webpack": "^1.0.2",
         "babel-plugin-import": "^1.8.0",
         "cross-env": "^5.2.0",
         "eslint": "^5.1.0",

@@ -1,6 +1,8 @@
 ---
 title: initial-letters-align
 category: property
-type: inlie
+type: inline
 anchor:
 ---
+
+# alignment-baseline

@@ -13,6 +13,7 @@ import LeftSide from './LeftSide';
 
 import HTMLContent from './HTMLDocument';
 import CSSContent from './CSSDocument';
+import JavaScriptContent from './JavaScriptDocument';
 import Documents from './Documents';
 
 
@@ -187,6 +188,15 @@ export default class MainContent extends React.Component {
 
                       case 'CSS': {
                         return (<CSSContent
+                          unitls={utils}
+                          localizedPageData={localizedPageData}
+                          demos={demos || ''}
+                        />
+                        );
+                      }
+
+                      case 'javaScript': {
+                        return (<JavaScriptContent
                           unitls={utils}
                           localizedPageData={localizedPageData}
                           demos={demos || ''}

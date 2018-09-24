@@ -1,5 +1,5 @@
 ---
-title: javascrpt介绍
+title: javaScrpt介绍
 order: 1
 ---
 

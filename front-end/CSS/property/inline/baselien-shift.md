@@ -1,7 +1,8 @@
 ---
 title: baselien-shift
 category: property
-type: inlie
+type: inline
 anchor:
 ---
 
+# alignment-baseline

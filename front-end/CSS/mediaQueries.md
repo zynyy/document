@@ -1,5 +1,6 @@
 ---
 title: CSS媒体查询
+type: mediaqueries
 order: 5
 ---
 
@@ -42,6 +43,7 @@ or
 > 从语法上讲，特征类似于CSS属性：它们具有名称并接受某些值。
 
 |  名称 | 值 | 描述 |
+| --- | --- | --- |
 | `width` | length + CSS 单位 | 输出设备中的页面可见区域宽度 |
 | `min-width` | length + CSS 单位 | 输出设备中的页面最低可见区域宽度 |
 | `max-width` | length + CSS 单位 | 输出设备中的页面最大可见区域宽度 |
@@ -70,14 +72,12 @@ or
 | `monochrome` | integer 类型 | 像素包含的单色原件个数 |
 | `min-monochrome` | integer 类型 | 像素包含的单色原件最小个数 |
 | `max-monochrome` | integer 类型 | 像素包含的单色原件最大个数 |
-| `resolution` | integer 类型 + dpi 单位| 输出设备的分辨率  |
-| `min-resolution` | integer 类型 + dpi 单位| 输出设备的最小分辨率  |
-| `max-resolution` | integer 类型 + dpi 单位| 输出设备的最大分辨率 |
+| `resolution` | integer 类型 + `dpi` | 输出设备的分辨率  |
+| `min-resolution` | integer 类型 + `dpi` | 输出设备的最小分辨率  |
+| `max-resolution` | integer 类型 + `dpi` | 输出设备的最大分辨率 |
 | `scan` | `progressive` or `interlace` | 电视类设备的扫描工序 |
 | `grid` | `-0`、`0` or `1` | 输出设备是否使用栅格或点阵 |
 
 <https://www.w3.org/TR/css3-mediaqueries/>
 
-## javascript
-
-1. 
+## javaScript

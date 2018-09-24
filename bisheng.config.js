@@ -1,5 +1,6 @@
 const path = require('path');
 // const OfflinePlugin = require('offline-plugin');
+
 const { injectBabelPlugin, injectBabelLess } = require('./utils/webpack.rewrite');
 
 const themeValue = require('./package.json').theme;
@@ -24,12 +25,13 @@ module.exports = {
   htmlTemplate: './theme/static/template.html',
   themeConfig,
   webpackConfig(config) {
-    // config.plugins.push(
-    //   new OfflinePlugin(),
-    // );
+    config.plugins.push(
+      // new OfflinePlugin(),
+    );
     /* eslint-disable-next-line */
     config.resolve.alias = {
       component: path.join(process.cwd(), 'theme/template/Component'),
+      demo: path.join(process.cwd(), 'theme/template/Demo'),
     };
 
     injectBabelPlugin(

@@ -1,7 +1,7 @@
 ---
 title: dominant-baseline
 category: property
-type: inlie
+type: inline
 anchor:
 ---
 

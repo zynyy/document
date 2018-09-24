@@ -171,7 +171,7 @@ const getCSSModulesInformation = (module) => {
   }, {
     module: 'display',
     version: {
-      1: {
+      3: {
         time: '2018年8月28日',
         state: 'CR',
       },

@@ -30,20 +30,25 @@ const sortMenuItems = (moduleData, conf) => {
         menuItems.push(group);
       }
 
-      if (meta.type) {
-        let type = group.children.filter(i => i.title === meta.type)[0];
-        if (!type && category) {
-          type = {
-            type: 'type',
-            title: meta.type,
-            children: [],
-            order: typeOrder[meta.type],
-          };
-          group.children.push(type);
+      if (group.children) {
+        if (meta.type) {
+          let type = group.children.filter(i => i.title === meta.type)[0];
+          if ((!type || (typeof type === 'object' && !type.children)) && category) {
+            type = {
+              type: 'type',
+              title: meta.type,
+              children: [],
+              order: typeOrder[meta.type],
+            };
+            group.children.push(type);
+          }
+
+          if (type.children) {
+            type.children.push(meta);
+          }
+        } else {
+          group.children.push(meta);
         }
-        type.children.push(meta);
-      } else {
-        group.children.push(meta);
       }
     }
   });

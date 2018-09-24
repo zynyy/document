@@ -1,6 +1,8 @@
 ---
 title: inline-sizing
 category: property
-type: inlie
+type: inline
 anchor:
 ---
+
+# alignment-baseline

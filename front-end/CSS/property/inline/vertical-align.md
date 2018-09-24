@@ -1,7 +1,7 @@
 ---
 title: vertical-align
 category: property
-type: inlie
+type: inline
 anchor:
 ---
 

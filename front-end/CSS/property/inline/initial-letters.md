@@ -1,6 +1,6 @@
 ---
 title: initial-letters
 category: property
-type: inlie
+type: inline
 anchor:
 ---

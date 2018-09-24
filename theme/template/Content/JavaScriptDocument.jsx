@@ -2,26 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { getChildren } from 'jsonml.js/lib/utils';
 import DocumentTitle from 'react-document-title';
-import { Row, Col, Spin } from 'antd';
-import Loadable from 'react-loadable';
+// import { Row, Col } from 'antd';
 
-import HTMLCompatible from '../Component/HTML/Compatible';
-import HTMLStandard from '../Component/HTML/Standard';
+import JavaScriptStandard from '../Component/JavaScript/Standard';
 
-function Loading() {
-  return (
-    <Spin />
-  );
-}
-
-const LoadableComponent = Loadable({
-  loader: () => import('../Demo/HTMLDemo'),
-  loading: Loading,
-});
-
-export default function HTMLDocument({ localizedPageData, unitls, demos }) {
+export default function JavaScriptDocument({ localizedPageData, unitls }) {
   const { meta, footnote, content } = localizedPageData;
-  const isSingleCol = meta.cols === 1;
+  // const isSingleCol = meta.cols === 1;
   const childrenContent = getChildren(content);
   return (
     <DocumentTitle title={meta.title || '暂无标题'}>
@@ -39,22 +26,16 @@ export default function HTMLDocument({ localizedPageData, unitls, demos }) {
             : null
         }
         {
-          meta.anchor
-            ? <HTMLCompatible element={`${meta.anchor}`.replace('and-', '').replace(/^the-(.*?)-element[s]?/, '$1').split('-')} />
-            : null
-        }
-        {
-          meta.anchor
+          meta.type
             ? (
-              <HTMLStandard
-                type={meta.type || ''}
+              <JavaScriptStandard
                 anchor={meta.anchor || ''}
                 version={meta.version || ''}
               />
             )
             : null
         }
-        <Row gutter={16}>
+        {/* <Row gutter={16}>
           <Col
             span={isSingleCol ? '24' : '12'}
             className={
@@ -65,7 +46,7 @@ export default function HTMLDocument({ localizedPageData, unitls, demos }) {
           >
             {
               demos
-                ? <LoadableComponent unitls={unitls} demos={demos} />
+                ? <HTMLDemo unitls={unitls} demos={demos} />
                 : null
             }
           </Col>
@@ -76,13 +57,13 @@ export default function HTMLDocument({ localizedPageData, unitls, demos }) {
                 <Col className="code-boxes-col-2-1" span={12}>
                   {
                     demos
-                      ? <LoadableComponent unitls={unitls} demos={demos} />
+                      ? <HTMLDemo unitls={unitls} demos={demos} />
                       : null
                   }
                 </Col>
               )
           }
-        </Row>
+        </Row> */}
         {
           footnote
             ? <hr className="footnotes-sep" />
@@ -98,7 +79,7 @@ export default function HTMLDocument({ localizedPageData, unitls, demos }) {
   );
 }
 
-HTMLDocument.propTypes = {
+JavaScriptDocument.propTypes = {
   localizedPageData: PropTypes.shape({
     meta: PropTypes.object,
     content: PropTypes.array,
@@ -107,8 +88,8 @@ HTMLDocument.propTypes = {
   unitls: PropTypes.shape({
     toReactComponent: PropTypes.func,
   }).isRequired,
-  demos: PropTypes.oneOfType([
-    PropTypes.object,
-    PropTypes.string,
-  ]).isRequired,
+  // demos: PropTypes.oneOfType([
+  //   PropTypes.object,
+  //   PropTypes.string,
+  // ]).isRequired,
 };
