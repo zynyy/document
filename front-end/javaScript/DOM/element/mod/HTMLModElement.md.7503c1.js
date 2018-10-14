@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/javaScript/DOM/element/mod/HTMLModElement.md"],{uYWe:function(e,t){e.exports={content:["article",["h1","js"]],footnote:"",meta:{title:"HTMLModElement",category:"DOM",type:"element",filename:"front-end/javaScript/DOM/element/mod/HTMLModElement.md"},anchor:[{title:"js",tag:"h1",href:"#anchor-js"}]}}});

@@ -1,1 +1,0 @@
-webpackJsonp(["front-end/javascript/DOM/HTMLCollection.md"],{MzXY:function(t,e){t.exports={content:["article",["p","IDL\u662fInterface description language\u7684\u7f29\u5199"]],footnote:"",meta:{title:"HTMLCollection",category:"DOM",filename:"front-end/javascript/DOM/HTMLCollection.md"},anchor:[]}}});

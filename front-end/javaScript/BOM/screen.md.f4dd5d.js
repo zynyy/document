@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/javaScript/BOM/screen.md"],{Agko:function(e,n){e.exports={content:["article",["h1","screen \u5bf9\u8c61"]],footnote:"",meta:{title:"screen BOM",category:"BOM",order:6,filename:"front-end/javaScript/BOM/screen.md"},anchor:[{title:"screen \u5bf9\u8c61",tag:"h1",href:"#anchor-screen-\u5bf9\u8c61"}]}}});

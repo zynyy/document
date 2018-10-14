@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/javaScript/ECMAScript/array/map.md"],{aq3n:function(a,t){a.exports={content:["article",["h1","concat"]],footnote:"",meta:{title:"concat",category:"ECMAScript",type:"array",anchor:"sec-array.prototype.concat",filename:"front-end/javaScript/ECMAScript/array/map.md"},anchor:[{title:"concat",tag:"h1",href:"#anchor-concat"}]}}});

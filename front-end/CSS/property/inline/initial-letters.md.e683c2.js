@@ -1,1 +1,0 @@
-webpackJsonp(["front-end/CSS/property/inline/initial-letters.md"],{Dyy7:function(t,e){t.exports={content:["article"],footnote:"",meta:{title:"initial-letters",category:"property",type:"inlie",anchor:null,filename:"front-end/CSS/property/inline/initial-letters.md"},anchor:[]}}});

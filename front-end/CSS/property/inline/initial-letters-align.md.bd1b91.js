@@ -1,1 +1,0 @@
-webpackJsonp(["front-end/CSS/property/inline/initial-letters-align.md"],{fuE6:function(t,e){t.exports={content:["article"],footnote:"",meta:{title:"initial-letters-align",category:"property",type:"inlie",anchor:null,filename:"front-end/CSS/property/inline/initial-letters-align.md"},anchor:[]}}});

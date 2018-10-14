@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/javaScript/DOM/element/HTMLElement.md"],{"1UrA":function(e,t){e.exports={content:["article",["h1","js"]],footnote:"",meta:{title:"HTMLElement",category:"DOM",type:"element",filename:"front-end/javaScript/DOM/element/HTMLElement.md"},anchor:[{title:"js",tag:"h1",href:"#anchor-js"}]}}});

@@ -1,0 +1,1 @@
+webpackJsonp(["front-end/CSS/property/inline/inline-sizing.md"],{"/gpU":function(n,e){n.exports={content:["article",["h1","alignment-baseline"]],footnote:"",meta:{title:"inline-sizing",category:"property",type:"inline",anchor:null,filename:"front-end/CSS/property/inline/inline-sizing.md"},anchor:[{title:"alignment-baseline",tag:"h1",href:"#anchor-alignment-baseline"}]}}});
