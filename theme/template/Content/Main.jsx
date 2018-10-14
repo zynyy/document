@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link, browserHistory } from 'bisheng/router';
 
 import {
-  Layout, Row, Col, Anchor,
+  Layout, Row, Col, Anchor, Icon,
 } from 'antd';
 
 import AnchorLink from 'antd/lib/anchor/AnchorLink';
@@ -250,14 +250,23 @@ export default class MainContent extends React.Component {
               span={24}
             >
               <section className="prev-next-nav">
+                <h2>上下篇</h2>
                 {
                   prev
-                    ? <Link className="prev-page" to={uriPath(prev.filename)}>{prev.title || next.filename}</Link>
+                    ? (
+                      <Link className="prev-page" to={uriPath(prev.filename)}>
+                        <Icon type="arrow-left" theme="outlined" className="footer-nav-icon-before" />
+                        {prev.title || next.filename}
+                      </Link>)
                     : null
                 }
                 {
                   next
-                    ? <Link className="next-page" to={uriPath(next.filename)}>{next.title || next.filename}</Link>
+                    ? (
+                      <Link className="next-page" to={uriPath(next.filename)}>
+                        {next.title || next.filename}
+                        <Icon type="arrow-right" theme="outlined" className="footer-nav-icon-after" />
+                      </Link>)
                     : null
                 }
               </section>

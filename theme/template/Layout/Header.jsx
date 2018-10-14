@@ -8,7 +8,6 @@ import {
   Layout,
   Row,
   Col,
-  Icon,
   Input,
   Menu,
   Cascader,
@@ -16,6 +15,7 @@ import {
 
 const { Header } = Layout;
 const { SubMenu, ItemGroup, Item } = Menu;
+const { Search } = Input;
 
 let docsearch;
 if (typeof window !== 'undefined') {
@@ -41,6 +41,7 @@ export default class HeaderContent extends React.Component {
     super(props);
     this.state = {
       current: props.params.index,
+      widthLength: 150,
     };
   }
 
@@ -71,9 +72,21 @@ export default class HeaderContent extends React.Component {
     });
   }
 
+  handleWidthLengthFocus = () => {
+    this.setState({
+      widthLength: 280,
+    });
+  }
+
+  handleWidthLengthBlur = () => {
+    this.setState({
+      widthLength: 150,
+    });
+  }
+
   render() {
     const { config, params, location } = this.props;
-    const { current } = this.state;
+    const { current, widthLength } = this.state;
     const { docs } = config;
     const { pathname } = location;
     const moduleName = params.index;
@@ -109,9 +122,11 @@ export default class HeaderContent extends React.Component {
 
             <Col span={5} className="search" id="search-box">
               <form>
-                <Input
+                <Search
                   placeholder="请输入关键词"
-                  prefix={<Icon type="search" />}
+                  style={{ width: widthLength, transition: 'width 0.5s' }}
+                  onFocus={this.handleWidthLengthFocus}
+                  onBlur={this.handleWidthLengthBlur}
                 />
               </form>
             </Col>

@@ -211,7 +211,7 @@ const getCSSModulesInformation = (module) => {
   }, {
     module: 'transitions',
     version: {
-      2: {
+      1: {
         time: '2017年11月30日',
         state: 'WD',
       },
