@@ -1,1 +1,0 @@
-webpackJsonp(["front-end/CSS/property/transforms/transform.md"],{yJY2:function(r,t){r.exports={content:["article",["h1","transform"]],footnote:"",meta:{title:"transform",category:"property",type:"transforms",filename:"front-end/CSS/property/transforms/transform.md"},anchor:[{title:"transform",tag:"h1",href:"#anchor-transform"}]}}});
