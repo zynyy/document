@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import classNames from 'classnames';
 import { Link } from 'bisheng/router';
 
 
@@ -11,6 +11,8 @@ import {
   Input,
   Menu,
   Cascader,
+  Popover,
+  Icon,
 } from 'antd';
 
 const { Header } = Layout;
@@ -42,6 +44,7 @@ export default class HeaderContent extends React.Component {
     this.state = {
       current: props.params.index,
       widthLength: 150,
+      menuVisible: false,
     };
   }
 
@@ -84,11 +87,21 @@ export default class HeaderContent extends React.Component {
     });
   }
 
+  handleMenuVisibleChange = (visible) => {
+    this.setState({
+      menuVisible: visible,
+    });
+  }
+
   render() {
-    const { config, params, location } = this.props;
-    const { current, widthLength } = this.state;
+    const {
+      config, params, location,
+      isMobile,
+    } = this.props;
+    const { current, widthLength, menuVisible } = this.state;
     const { docs } = config;
     const { pathname } = location;
+    const mode = isMobile ? 'inline' : 'horizontal';
     const moduleName = params.index;
     const selectValue = pathname.split('/').slice(0, 2);
     const options = Object.keys(docs).map(doc => (
@@ -108,19 +121,82 @@ export default class HeaderContent extends React.Component {
       }
     ));
 
+    const menu = [
+      <Cascader
+        options={options}
+        value={selectValue}
+        onChange={this.handleDocsChange}
+        allowClear={false}
+        key="docs"
+      />,
+      <nav id="nav" key="nav">
+        <Menu
+          mode={mode}
+          selectedKeys={[current]}
+          onClick={this.handleNavClick}
+        >
+          <Menu.Item key="home">
+            <Link to="/"> 首页 </Link>
+          </Menu.Item>
+
+          <SubMenu title={<span className="submenu-title-wrapper"> 文档 </span>}>
+            {
+              Object.keys(docs).map(doc => (
+                <ItemGroup title={docs[doc].name} key={doc}>
+                  {
+                    docs[doc].index
+                      ? Object.keys(docs[doc].index).map(item => (
+                        <Item key={item}>
+                          {
+                            current !== item
+                              ? <Link to={docs[doc].index[item]}>{item}</Link>
+                              : <span>{item}</span>
+                          }
+                        </Item>
+                      ))
+                      : ''
+                  }
+                </ItemGroup>
+              ))
+            }
+          </SubMenu>
+          <Menu.Item>
+            <a href="//me.65ker.com" target="_blank" rel="noopener noreferrer"> 关于我 </a>
+          </Menu.Item>
+        </Menu>
+      </nav>,
+    ];
+
     return (
-      <header id="header" className="navbar-light">
-        <Header>
+      <header id="header">
+        <Header style={isMobile ? { position: 'fixed', zIndex: 1, width: '100%' } : null} className={classNames('navbar-light')}>
+          {
+            isMobile && moduleName && (
+              <Popover
+                overlayClassName="popover-menu"
+                placement="bottomRight"
+                content={menu}
+                trigger="click"
+                visible={menuVisible}
+                arrowPointAtCenter
+                onVisibleChange={this.handleMenuVisibleChange}
+              >
+                <Icon
+                  className="nav-phone-icon"
+                  type="menu"
+                />
+              </Popover>
+            )
+          }
           <Row gutter={16} type="flex" justify="start">
 
-            <Col span={5} className="logo">
+            <Col span={5} className="logo" xxl={4} xl={5} lg={5} md={6} sm={24} xs={24}>
               <Link to="/">
-                大大 logo
+                编程文档
               </Link>
-
             </Col>
 
-            <Col span={5} className="search" id="search-box">
+            <Col span={isMobile ? 0 : 5} className="search" id="search-box">
               <form>
                 <Search
                   placeholder="请输入关键词"
@@ -131,55 +207,13 @@ export default class HeaderContent extends React.Component {
               </form>
             </Col>
 
-            <Col span={moduleName ? 10 : 0} className="nav">
-              <nav id="nav">
-                <Menu
-                  mode="horizontal"
-                  selectedKeys={[current]}
-                  onClick={this.handleNavClick}
-                >
-                  <Menu.Item key="home">
-                    <Link to="/"> 首页 </Link>
-                  </Menu.Item>
-
-                  <SubMenu title={<span className="submenu-title-wrapper"> 文档 </span>}>
-                    {
-                      Object.keys(docs).map(doc => (
-                        <ItemGroup title={docs[doc].name} key={doc}>
-                          {
-                            docs[doc].index
-                              ? Object.keys(docs[doc].index).map(item => (
-                                <Item key={item}>
-                                  {
-                                    current !== item
-                                      ? <Link to={docs[doc].index[item]}>{item}</Link>
-                                      : <span>{item}</span>
-                                  }
-                                </Item>
-                              ))
-                              : ''
-                          }
-                        </ItemGroup>
-                      ))
-                    }
-                  </SubMenu>
-
-                  <Menu.Item>
-                    <a href="//me.65ker.com" target="_blank" rel="noopener noreferrer"> 关于作者</a>
-                  </Menu.Item>
-
-                </Menu>
-              </nav>
+            <Col span={moduleName && !isMobile ? 9 : 0} className="nav">
+              {menu[1]}
             </Col>
 
-            <Col span={moduleName ? 4 : 0} className="docs">
+            <Col span={moduleName && !isMobile ? 4 : 0} className="docs">
 
-              <Cascader
-                options={options}
-                value={selectValue}
-                onChange={this.handleDocsChange}
-                allowClear={false}
-              />
+              {menu[0]}
 
             </Col>
           </Row>
@@ -198,4 +232,5 @@ HeaderContent.propTypes = {
   }).isRequired,
   location: PropTypes.shape().isRequired,
   router: PropTypes.shape().isRequired,
+  isMobile: PropTypes.bool.isRequired,
 };

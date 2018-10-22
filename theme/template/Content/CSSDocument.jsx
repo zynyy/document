@@ -44,22 +44,22 @@ export default function CSSDocument({ localizedPageData, unitls, demos }) {
                 : 'code-boxes-col-2-1'
             }
           >
-            {
+            {/* {
               demos
-                ? <HTMLDemo unitls={unitls} demos={demos} />
+                ? <CSSDemo unitls={unitls} demos={demos} />
                 : null
-            }
+            } */}
           </Col>
           {
             isSingleCol
               ? null
               : (
                 <Col className="code-boxes-col-2-1" span={12}>
-                  {
+                  {/* {
                     demos
-                      ? <HTMLDemo unitls={unitls} demos={demos} />
+                      ? <CSSDemo unitls={unitls} demos={demos} />
                       : null
-                  }
+                  } */}
                 </Col>
               )
           }

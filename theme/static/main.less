@@ -1,8 +1,20 @@
 
 #main {
-    padding-top: 2px;
+  padding-top: 2px;
 };
 
 .main-container {
-    padding: 30px 50px 144px 50px;
+  padding: 30px 50px 144px 50px;
 }
+
+@media only screen and (max-width: 767.99px) {
+  .main-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 0;
+  }
+  #main {
+    margin-top: @layout-header-height;
+  };
+}
+

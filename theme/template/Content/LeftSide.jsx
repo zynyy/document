@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'bisheng/router';
 
 import { Layout, Menu, Icon } from 'antd';
+import Drawer from 'rc-drawer';
+
+import isMobileContext from '../Context/Mobile';
 
 import { docModule, uriPath } from '../utils';
 
@@ -191,28 +194,47 @@ export default class LeftSide extends React.Component {
     const { active } = this.props;
     const menuItems = this.getMenuItems();
     const { openKeys } = this.state;
+    const menuChild = (
+      <Menu
+        mode="inline"
+        selectedKeys={[active]}
+        openKeys={openKeys}
+        style={{ height: '100%' }}
+        onOpenChange={this.handleMenuOpenChange}
+      >
+        {menuItems}
+      </Menu>
+    );
+
     return (
-      <aside id="sidebar-nav">
-        <Sider
-          style={{
-            overflow: 'auto',
-            height: '100vh',
-            position: 'sticky',
-            left: 0,
-            top: 0,
-          }}
-        >
-          <Menu
-            mode="inline"
-            selectedKeys={[active]}
-            openKeys={openKeys}
-            style={{ height: '100%' }}
-            onOpenChange={this.handleMenuOpenChange}
-          >
-            {menuItems}
-          </Menu>
-        </Sider>
-      </aside>
+      <isMobileContext.Consumer>
+        {isMobile => (
+          isMobile
+            ? (
+              <Drawer
+                key="Mobile-menu"
+                wrapperClassName="drawer-wrapper"
+              >
+                {menuChild}
+              </Drawer>
+            )
+            : (
+              <aside id="sidebar-nav">
+                <Sider
+                  style={{
+                    overflow: 'auto',
+                    height: '100vh',
+                    position: 'sticky',
+                    left: 0,
+                    top: 0,
+                  }}
+                >
+                  {menuChild}
+                </Sider>
+              </aside>
+            )
+        )}
+      </isMobileContext.Consumer>
     );
   }
 }

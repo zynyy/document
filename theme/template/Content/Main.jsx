@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, browserHistory } from 'bisheng/router';
+import { Link } from 'bisheng/router';
 
 import {
   Layout, Row, Col, Anchor, Icon,
 } from 'antd';
 
-import AnchorLink from 'antd/lib/anchor/AnchorLink';
-
+import isMobileContext from '../Context/Mobile';
 import { docModule, uriPath } from '../utils';
 import LeftSide from './LeftSide';
 
@@ -16,8 +15,8 @@ import CSSContent from './CSSDocument';
 import JavaScriptContent from './JavaScriptDocument';
 import Documents from './Documents';
 
-
 const { Content } = Layout;
+const AnchorLink = Anchor.Link;
 
 const getModuleData = (props) => {
   const { picked, params } = props;
@@ -74,9 +73,7 @@ export default class MainContent extends React.Component {
 
   componentDidUpdate(prevProps) {
     const { location } = this.props;
-    if (!prevProps || prevProps.location.pathname !== location.pathname) {
-      this.bindScroller();
-    }
+
     if (!prevProps
       || (!window.location.hash
         && prevProps
@@ -100,7 +97,7 @@ export default class MainContent extends React.Component {
           inline: 'nearest',
         });
       }
-    }, 200); // 如果页面延迟大于 200则无效
+    }, 200); // 如果页面加载大于 200ms则无效
   }
 
   footerNav = (chilrenEvent) => {
@@ -114,34 +111,6 @@ export default class MainContent extends React.Component {
         anchors: reshapAnchor(localizedPageData.anchor),
       });
     }
-  }
-
-
-  bindScroller() {
-    if (this.scroller) {
-      this.scroller.disable();
-    }
-    // ssr渲染 windows
-    require('intersection-observer'); // eslint-disable-line
-    const scrollama = require('scrollama'); // eslint-disable-line
-    this.scroller = scrollama();
-    this.scroller.setup({
-      step: '.anchor',
-      container: '.markdown',
-    }).onStepEnter(() => {
-      const currentNode = document.querySelector('.ant-anchor-link-title-active');
-      if (currentNode) {
-        browserHistory.replace({
-          pathname: window.location.pathname,
-          hash: currentNode.getAttribute('href'),
-        });
-      } else {
-        browserHistory.replace({
-          pathname: window.location.pathname,
-          hash: '',
-        });
-      }
-    });
   }
 
   render() {
@@ -162,89 +131,89 @@ export default class MainContent extends React.Component {
     const activeMenuItem = location.pathname;
     return (
       <Layout>
-
         <LeftSide
           active={activeMenuItem}
           conf={sideConf}
           moduleData={moduleData}
           footerNav={this.footerNav}
         />
-
         <Content>
-          <Row>
-            <Col className="main-container" span={anchors ? 22 : 24}>
-              {
-                (
-                  () => {
-                    switch (moduleName) {
-                      case 'HTML': {
-                        return (<HTMLContent
-                          unitls={utils}
-                          localizedPageData={localizedPageData}
-                          demos={demos || ''}
-                        />
-                        );
-                      }
+          <isMobileContext.Consumer>
+            {isMobile => (
+              <Row>
+                <Col className="main-container" span={(anchors && !isMobile) ? 22 : 24}>
+                  {
+                    (
+                      () => {
+                        switch (moduleName) {
+                          case 'HTML': {
+                            return (<HTMLContent
+                              unitls={utils}
+                              localizedPageData={localizedPageData}
+                              demos={demos || ''}
+                            />
+                            );
+                          }
 
-                      case 'CSS': {
-                        return (<CSSContent
-                          unitls={utils}
-                          localizedPageData={localizedPageData}
-                          demos={demos || ''}
-                        />
-                        );
-                      }
+                          case 'CSS': {
+                            return (<CSSContent
+                              unitls={utils}
+                              localizedPageData={localizedPageData}
+                              demos={demos || ''}
+                            />
+                            );
+                          }
 
-                      case 'javaScript': {
-                        return (<JavaScriptContent
-                          unitls={utils}
-                          localizedPageData={localizedPageData}
-                          demos={demos || ''}
-                        />
-                        );
-                      }
+                          case 'javaScript': {
+                            return (<JavaScriptContent
+                              unitls={utils}
+                              localizedPageData={localizedPageData}
+                              demos={demos || ''}
+                            />
+                            );
+                          }
 
-                      default: {
-                        return (
-                          <Documents
-                            unitls={utils}
-                            localizedPageData={localizedPageData}
-                            demos={demos || ''}
-                          />
-                        );
-                      }
-                    }
-                  }
-                )()
-              }
-            </Col>
-            {
-              anchors
-                ? (
-                  <Col span={2}>
-                    {
-                      <Anchor bounds={16} offsetTop={100}>
-                        {
-                          anchors.map(node => (
-                            <AnchorLink href={node.href} title={node.title} key={node.href}>
-                              {
-                                node.children
-                                  ? node.children.map(children => (
-                                    <AnchorLink href={children.href} title={children.title} key={`${children.href}`} />
-                                  ))
-                                  : null
-                              }
-                            </AnchorLink>
-                          ))
+                          default: {
+                            return (
+                              <Documents
+                                unitls={utils}
+                                localizedPageData={localizedPageData}
+                                demos={demos || ''}
+                              />
+                            );
+                          }
                         }
-                      </Anchor>
-                    }
-                  </Col>)
-                : null
-            }
+                      }
+                    )()
+                  }
+                </Col>
 
-          </Row>
-
+                {anchors
+                  ? (
+                    <Col span={isMobile ? 0 : 2}>
+                      {
+                        <Anchor bounds={16} offsetTop={100}>
+                          {
+                            anchors.map(node => (
+                              <AnchorLink href={node.href} title={node.title} key={node.href}>
+                                {
+                                  node.children
+                                    ? node.children.map(children => (
+                                      <AnchorLink href={children.href} title={children.title} key={`${children.href}`} />
+                                    ))
+                                    : null
+                                }
+                              </AnchorLink>
+                            ))
+                          }
+                        </Anchor>
+                      }
+                    </Col>)
+                  : null
+                }
+              </Row>
+            )}
+          </isMobileContext.Consumer>
           <Row>
             <Col
               span={24}

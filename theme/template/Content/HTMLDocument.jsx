@@ -63,22 +63,22 @@ export default function HTMLDocument({ localizedPageData, unitls, demos }) {
                 : 'code-boxes-col-2-1'
             }
           >
-            {
+            {/* {
               demos
                 ? <LoadableComponent unitls={unitls} demos={demos} />
                 : null
-            }
+            } */}
           </Col>
           {
             isSingleCol
               ? null
               : (
                 <Col className="code-boxes-col-2-1" span={12}>
-                  {
+                  {/* {
                     demos
                       ? <LoadableComponent unitls={unitls} demos={demos} />
                       : null
-                  }
+                  } */}
                 </Col>
               )
           }
