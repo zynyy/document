@@ -1,32 +1,49 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 export default class HomeScene extends React.Component {
   handleActiveModuleClick = (event) => {
-    console.warn(event);
+    const { setActiveScene } = this.props;
+    setActiveScene(event.target.value);
   }
 
   render() {
-    const { modules } = this.props;
+    const { modules, activeIndex } = this.props;
     return (
-      <div className="scene">
+      <ul className="slick-dots" style={{ display: 'block' }}>
         {
-          modules.map(module => (
-            <button
-              key={module}
-              onClick={this.handleActiveModuleClick}
-              type="button"
-              className="scene-nav-button scene-active"
-            >
-              {module}
-            </button>
-          ))
+          modules.map((module, index) => {
+            return (
+              <li
+                className={
+                  classnames(
+                    {
+                      'slick-active': index === activeIndex,
+                    },
+                  )
+                }
+                key={module}
+              >
+                <button
+                  onClick={this.handleActiveModuleClick}
+                  type="button"
+                  title={module}
+                  value={index}
+                >
+                  {module}
+                </button>
+              </li>
+            );
+          })
         }
-      </div>
+      </ul>
     );
   }
 }
 
 HomeScene.propTypes = {
   modules: PropTypes.arrayOf(PropTypes.string).isRequired,
+  setActiveScene: PropTypes.func.isRequired,
+  activeIndex: PropTypes.number.isRequired,
 };

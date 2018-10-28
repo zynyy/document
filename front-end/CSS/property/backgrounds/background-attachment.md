@@ -2,20 +2,25 @@
 title: background-attachment
 category: property
 type: backgrounds
+order: 8.6
 ---
 
-# CSS 背景
+# background-attachment 背景图像是否固定
 
-| 特征 | 值 | 描述 |
-| ---- | ---- |---- |
-| `background` | | |
-| `background-color` | | |
-| `background-image` | | |
-| `background-repeat` | | |
-| `background-attachment` | | |
-| `background-position` | | |
-| `background-clip` | | |
-| `background-origin` | | |
-| `background-size` | | |
+给元素设置背景图像是随对象内容滚动还是固定的。
 
-<https://www.w3.org/TR/css-backgrounds-3/>
+## 语法
+
+```css
+background-attachment: [ scroll | fixed | local ]
+
+eg:
+background-attachment: scroll; /* 元素背景图象宽度、高度为 10px */
+```
+
+## 属性值
+
+1. [全局属性值](/front-end/CSS/values#anchor-值类型)
+1. `scroll`:
+1. `fixed`:
+1. `local`:

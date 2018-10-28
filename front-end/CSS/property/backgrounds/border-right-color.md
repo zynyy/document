@@ -2,19 +2,23 @@
 title: border-right-color
 category: property
 type: backgrounds
+order: 4.3
 ---
 
-# CSS 边框线
+# border-right-color 边框线颜色
 
-| 特征 | 值 | 描述 |
-| --- | --- | --- |
-| `border` | | |
-| `border-style` | | |
-| `border-width` | | |
-| `border-radius` | | |
-| `border-image` | | |
-| `border-iamge-source` | | |
-| `border-iamge-slice` | | |
-| `border-iamge-width` | | |
-| `border-iamge-outset` | | |
-| `border-iamge-repeat` | | |
+给元素设置右边框线颜色。
+
+## 语法
+
+```css
+border-right-color: [<color>]
+
+eg:
+border-right-color: red; /* 设置右方向边框线颜色为 red */
+```
+
+## 属性值
+
+1. [全局属性值](/front-end/CSS/values#anchor-值类型)
+1. [color](/front-end/CSS/values#anchor-值类型)

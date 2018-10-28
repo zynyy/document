@@ -2,6 +2,7 @@
 title: font-weight
 category: property
 type: fonts
+order: 1.2
 ---
 
 # font

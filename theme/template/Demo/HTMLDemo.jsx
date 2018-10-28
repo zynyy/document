@@ -1,15 +1,15 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
-import { Controlled as CodeMirror } from 'react-codemirror2';
-import 'codemirror/mode/xml/xml';
+// import { Controlled as CodeMirror } from 'react-codemirror2';
+// import 'codemirror/mode/xml/xml';
 
 import { Tooltip, Icon } from 'antd';
 import EditButton from '../Component/EditButton';
 
-require('codemirror/mode/javascript/javascript.js');
+// require('codemirror/mode/javascript/javascript.js');
 
 export default class HTMLDemo extends React.Component {
   state = {
@@ -120,7 +120,7 @@ export default class HTMLDemo extends React.Component {
               </CopyToClipboard>
             </div>
           </div>
-          <CodeMirror
+          {/* <CodeMirror
             value={sourceCode}
             options={{
               mode: 'xml',
@@ -133,7 +133,7 @@ export default class HTMLDemo extends React.Component {
                 sourceCode: value,
               });
             }}
-          />
+          /> */}
         </section>
       </section>
     );

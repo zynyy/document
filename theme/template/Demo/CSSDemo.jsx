@@ -3,33 +3,38 @@ import PropTypes from 'prop-types';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 import {
-  Radio, Tooltip, Icon, Input, Popover,
+  Radio, Tooltip, Icon, Popover,
+  Checkbox, Row, Col, Input,
 } from 'antd';
 
-// import UnitSelect from '../Component/CSS/UnitSelect';
+
+import UnitSelect from '../Component/CSS/UnitSelect';
+
+const { Button, Group } = Radio;
+const CheckboxGroup = Checkbox.Group;
+
 
 export default class CSSDemo extends React.Component {
-  // static length(value) {
-  //   return (
-  //     <Radio value={value}>
-  //       {value}
-  //       <Input type="number" style={{ width: 100, marginLeft: 10 }} addonAfter={UnitSelect} />
-  //     </Radio>
-  //   );
-  // }
   constructor(props) {
     super(props);
     this.state = {
       nowValue: props.defaultValue,
       copied: false,
+      unit: 'px',
     };
   }
 
-  handleValueChange = (e) => {
+  handleValueChange = (e: Event) => {
     const { value } = e.target;
-    console.warn();
     this.setState({
       nowValue: value,
+      copied: false,
+    });
+  }
+
+  handleUnitChange = (value: String) => {
+    this.setState({
+      unit: value,
       copied: false,
     });
   }
@@ -38,9 +43,77 @@ export default class CSSDemo extends React.Component {
     this.setState({ copied: true });
   }
 
+  handleCheckChange = (e: Event) => {
+    console.warn(e.target.value);
+  }
+
+  generatePopoverContent = (values: Object<Array>, defaultUnit: string) => {
+    return (
+      <Input
+        addonAfter={(
+          <UnitSelect
+            selectUnitTypes={values.types}
+            defaultUnit={defaultUnit}
+          />
+        )}
+        defaultValue="1"
+        onChange={this.handleValueChange}
+      />
+    );
+  }
+
+  generateKeyword = (values: Array<String>) => {
+    return (
+      values.map(value => (
+        <Button
+          value={value}
+          key={value}
+        >
+          {value}
+        </Button>
+      ))
+    );
+  }
+
+  generateCompound = (values: Object) => {
+    return (
+      <CheckboxGroup>
+        {
+          Object.keys(values).map(key => (
+            Object.keys(values[key]).map(value => (
+              <Row key={key}>
+                <Col span={12}>
+                  <Checkbox
+                    value={value}
+                    onChange={this.handleCheckChange}
+                  >
+                    {value}
+                  </Checkbox>
+                </Col>
+                <Col span={12}>
+                  <Input
+                    addonAfter={(
+                      <UnitSelect
+                        selectUnitTypes={values[key][value].types}
+                        defaultUnit="px"
+                        onChange={this.handleUnitChange}
+                      />
+                    )}
+                    defaultValue="1"
+                    onChange={this.handleValueChange}
+                  />
+                </Col>
+              </Row>
+            ))
+          ))
+        }
+      </CheckboxGroup>
+    );
+  }
+
   render() {
     const { property, values } = this.props;
-    const { nowValue, copied } = this.state;
+    const { nowValue, copied, unit } = this.state;
     const getStyle = {
       [property]: nowValue,
     };
@@ -63,19 +136,19 @@ export default class CSSDemo extends React.Component {
         {
           Object.keys(values).map((key) => {
             switch (key) {
-              case 'keywork':
+              case 'keywork': {
                 return (
-                  <Radio.Group value={nowValue} onChange={this.handleValueChange} key={key} buttonStyle="solid" name={key}>
+                  <Group value={nowValue} onChange={this.handleValueChange} key={key} buttonStyle="solid" name={key}>
                     {
-                      values[key].map(value => (
-                        <Radio.Button value={value} key={value}>{value}</Radio.Button>
-                      ))
+                      this.generateKeyword(values[key])
                     }
-                  </Radio.Group>
+                  </Group>
                 );
-              case 'functions':
+              }
+
+              case 'functions': {
                 return (
-                  <Radio.Group
+                  <Group
                     value={nowValue}
                     onChange={this.handleValueChange}
                     key={key}
@@ -94,9 +167,15 @@ export default class CSSDemo extends React.Component {
 
                       ))
                     }
-
-                  </Radio.Group>
+                  </Group>
                 );
+              }
+
+              case 'compound': {
+                return (
+                  this.generateCompound(values[key])
+                );
+              }
               default:
                 return null;
             }
@@ -108,7 +187,7 @@ export default class CSSDemo extends React.Component {
           当前样式属性:&nbsp;&nbsp;
           {`${property}: ${nowValue};`}
           <CopyToClipboard
-            text={`${property}: ${nowValue};`}
+            text={`${property}: ${nowValue}${unit};`}
             onCopy={this.handleCodeCopied}
           >
             <Tooltip

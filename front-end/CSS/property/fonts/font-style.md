@@ -2,6 +2,7 @@
 title: font-style
 category: property
 type: fonts
+order: 1.4
 ---
 
 # font

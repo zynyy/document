@@ -1,4 +1,5 @@
 import Group from './group';
+// import { getElementHeight } from './utils';
 
 class Canvas {
   stage: HTMLCanvasElement;
@@ -17,10 +18,9 @@ class Canvas {
     this.stage = el;
     this.num = num || 100;
     this.ctx = el.getContext('2d');
-    this.stage.height = window.innerHeight - document.getElementById('footer').scrollHeight;
+    this.stage.height = window.innerHeight;
+    // - getElementHeight('header') - getElementHeight('footer') - 2;
     this.stage.width = window.innerWidth;
-    console.warn(window.innerHeight);
-    console.warn(document.getElementById('footer').scrollHeight);
   }
 
   init() {

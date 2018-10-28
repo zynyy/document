@@ -9,28 +9,17 @@ export default class HomePageWrapper extends React.Component {
     this.state = {
       isCheck: false,
       selectModule: 'front-end',
-      activeModule: 'front-end',
+      topLength: 0,
     };
   }
 
   componentDidMount() {
     // this.intervalTimer();
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
-
-  intervalTimer = () => {
-    let i = 0;
-    const { modules } = this.props;
-    const { length } = modules;
-    this.timer = setInterval(() => {
-      i += 1;
-      this.setState({
-        activeModule: modules[i % length],
-      });
-    }, 1500);
+    const Height = window.innerHeight;
+    const topLength = Height / 4 - 20;
+    this.setState({
+      topLength,
+    });
   }
 
   handleInputChange = (event) => {
@@ -44,13 +33,17 @@ export default class HomePageWrapper extends React.Component {
   }
 
   render() {
-    const { isCheck, selectModule, activeModule } = this.state;
-    const { module, moduleData } = this.props;
+    const {
+      isCheck, selectModule,
+      topLength,
+    } = this.state;
+
+    const { module, moduleData, activeScene } = this.props;
 
     return (
-      <div className={classnames('home-page-wrapper', { active: module === activeModule })}>
+      <div className={classnames('home-page-wrapper', { active: module === activeScene })}>
         <div className="docs-mian">
-          <div className={classnames('module')}>
+          <div className={classnames('module')} style={{ top: `${topLength}px` }}>
             <label htmlFor={module} className={classnames('module-btn', 'transBg', { check: isCheck && (selectModule === module) })} role="button">
               <input
                 id={module}
@@ -80,5 +73,5 @@ HomePageWrapper.propTypes = {
     name: PropTypes.string,
     index: PropTypes.object,
   }).isRequired,
-  modules: PropTypes.arrayOf(PropTypes.string).isRequired,
+  activeScene: PropTypes.string.isRequired,
 };

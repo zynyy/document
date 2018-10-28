@@ -2,6 +2,7 @@
 title: border-image-repeat
 category: property
 type: backgrounds
+order: 9.5
 ---
 
 # CSS 边框线

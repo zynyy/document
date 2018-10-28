@@ -4,6 +4,7 @@ import { getCSSModulesInformation } from './moduleVersion';
 
 export default function Standard({ module, anchor }) {
   const baseURL = 'https://www.w3.org/TR/';
+  const baseDraftsURL = 'https://drafts.csswg.org/';
   const CSSModule = getCSSModulesInformation(module);
   if (!CSSModule) {
     console.error(`没有找到${module}模块版本`);
@@ -31,7 +32,7 @@ export default function Standard({ module, anchor }) {
                     <tr key={`${CSSModule.module}-${key}`}>
                       <td>
                         <a
-                          href={`${baseURL}${CSSModule.css ? '' : 'css-'}${module}-${key}/#${anchor}`}
+                          href={`${CSSModule.version[key].state === 'Draft' ? baseDraftsURL : baseURL}${CSSModule.css ? '' : 'css-'}${module}-${key}/#${anchor}`}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -51,7 +52,7 @@ export default function Standard({ module, anchor }) {
                   <tr>
                     <td>
                       <a
-                        href={`${baseURL}css3-${module}/#${anchor}`}
+                        href={`${baseURL}${CSSModule.url ? '' : 'css3-'}${module}/${CSSModule.url.endsWith('.html') ? CSSModule.url : ''}#${anchor}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

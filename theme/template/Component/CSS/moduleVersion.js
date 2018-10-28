@@ -223,6 +223,10 @@ const getCSSModulesInformation = (module) => {
         time: '2017年11月30日',
         state: 'WD',
       },
+      2: {
+        time: '2018年10月23日',
+        state: 'Draft',
+      },
     },
   }, {
     module: 'align',
@@ -358,6 +362,31 @@ const getCSSModulesInformation = (module) => {
       3: {
         time: '2017年3月7日',
         state: 'WD',
+      },
+    },
+  }, {
+    module: 'inline',
+    version: {
+      3: {
+        time: '2018年8月8日',
+        state: 'WD',
+      },
+    },
+  }, {
+    module: 'CSS22',
+    time: '2016年4月12号',
+    url: 'visufx.html',
+  }, {
+    module: 'pointerevents2',
+    time: '2018年10月16号',
+    url: 'null',
+    state: 'REC',
+  }, {
+    module: 'variables',
+    version: {
+      1: {
+        time: '2015年12月03日',
+        state: 'REC',
       },
     },
   }];

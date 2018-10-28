@@ -2,6 +2,7 @@
 title: border-image-slice
 category: property
 type: backgrounds
+order: 9.2
 ---
 
 # CSS 边框线

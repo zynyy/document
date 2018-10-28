@@ -8,6 +8,7 @@ import isMobileContext from '../Context/Mobile';
 
 import HeaderContent from './Header';
 import FooterContent from './Footer';
+import Background from './Background';
 
 if (typeof window !== 'undefined') {
   // OfflineRuntime.install();
@@ -39,12 +40,31 @@ export default class LayoutBase extends React.Component {
 
   render() {
     const { props, state } = this;
-    const { children, themeConfig, location } = props;
+    const {
+      children, themeConfig, location,
+      params,
+    } = props;
     const { isMobile } = state;
+    const moduleName = params.index;
 
     return (
       <isMobileContext.Provider value={isMobile}>
-        <Layout>
+        {
+          moduleName
+            ? null
+            : (
+              <Background />
+            )
+        }
+        <Layout
+          className={
+            classnames(
+              { pc: !isMobile },
+              { mobile: isMobile },
+              { home: !moduleName },
+            )
+          }
+        >
           <HeaderContent
             {...this.props}
             config={themeConfig}
@@ -52,7 +72,7 @@ export default class LayoutBase extends React.Component {
             isMobile={isMobile}
           />
 
-          <main id="main" className={classnames({ pc: !isMobile }, { mobile: isMobile })}>
+          <main id="main">
             {children}
           </main>
 

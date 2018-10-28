@@ -2,20 +2,23 @@
 title: background-clip
 category: property
 type: backgrounds
+order: 8.7
 ---
 
-# CSS 背景
+# background-clip 背景图像裁剪区域
 
-| 特征 | 值 | 描述 |
-| ---- | ---- |---- |
-| `background` | | |
-| `background-color` | | |
-| `background-image` | | |
-| `background-repeat` | | |
-| `background-attachment` | | |
-| `background-position` | | |
-| `background-clip` | | |
-| `background-origin` | | |
-| `background-size` | | |
+## 语法
 
-<https://www.w3.org/TR/css-backgrounds-3/>
+```css
+background-clip: [ border-box | padding-box | content-box ]
+
+eg:
+background-clip: border-box; /* 元素背景图象宽度、高度为 10px */
+```
+
+## 属性值
+
+1. [全局属性值](/front-end/CSS/values#anchor-值类型)
+1. `border-box`:
+1. `padding-box`:
+1. `content-box`:

@@ -2,20 +2,28 @@
 title: background-size
 category: property
 type: backgrounds
+order: 8.4
 ---
 
-# CSS 背景
+# background-size 背景图像大小
 
-| 特征 | 值 | 描述 |
-| ---- | ---- |---- |
-| `background` | | |
-| `background-color` | | |
-| `background-image` | | |
-| `background-repeat` | | |
-| `background-attachment` | | |
-| `background-position` | | |
-| `background-clip` | | |
-| `background-origin` | | |
-| `background-size` | | |
+给元素背景图像设置大小。
 
-<https://www.w3.org/TR/css-backgrounds-3/>
+## 语法
+
+```css
+background-size: [ [<length> | <percentage> | auto ]{1,2} | cover | contain ]
+
+eg:
+background-size: 10px; /* 元素背景图象宽度、高度为 10px */
+background-size: 10px 20px; /* 元素背景图象宽度、高度分别为 10px 20px */
+```
+
+## 属性值
+
+1. [全局属性值](/front-end/CSS/values#anchor-值类型)
+1. [length](/front-end/CSS/values#anchor-值类型)
+1. [percentage](/front-end/CSS/values#anchor-值类型)
+1. `auto`:
+1. `cover`:
+1. `contain`:

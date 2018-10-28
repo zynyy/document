@@ -2,6 +2,7 @@
 title: border-image-outset
 category: property
 type: backgrounds
+order: 9.4
 ---
 
 # CSS 边框线

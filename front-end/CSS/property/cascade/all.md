@@ -1,9 +1,8 @@
 ---
 title: all
 category: property
-type: casacde
+type: cascade
 anchor:
 ---
 
-# casacde
-
+# cascade

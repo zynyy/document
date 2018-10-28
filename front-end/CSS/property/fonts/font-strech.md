@@ -2,6 +2,7 @@
 title: font-strech
 category: property
 type: fonts
+order: 1.3
 ---
 
 # font

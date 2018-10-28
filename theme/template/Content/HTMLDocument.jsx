@@ -2,22 +2,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { getChildren } from 'jsonml.js/lib/utils';
 import DocumentTitle from 'react-document-title';
-import { Row, Col, Spin } from 'antd';
-import Loadable from 'react-loadable';
+import { Row, Col } from 'antd';
+// import Loadable from 'react-loadable';
 
 import HTMLCompatible from '../Component/HTML/Compatible';
 import HTMLStandard from '../Component/HTML/Standard';
 
-function Loading() {
-  return (
-    <Spin />
-  );
-}
+// function Loading() {
+//   return (
+//     <Spin />
+//   );
+// }
 
-const LoadableComponent = Loadable({
-  loader: () => import('../Demo/HTMLDemo'),
-  loading: Loading,
-});
+// const LoadableComponent = Loadable({
+//   loader: () => import('../Demo/HTMLDemo'),
+//   loading: Loading,
+// });
 
 export default function HTMLDocument({ localizedPageData, unitls, demos }) {
   const { meta, footnote, content } = localizedPageData;

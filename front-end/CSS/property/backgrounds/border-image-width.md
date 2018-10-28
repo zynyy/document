@@ -2,6 +2,7 @@
 title: border-image-width
 category: property
 type: backgrounds
+order: 9.3
 ---
 
 # CSS 边框线

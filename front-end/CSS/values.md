@@ -19,7 +19,7 @@ order: 4
 
 值组成类型以多种方式指定:
 
-* 关键词: `initial`, `inherit`, `unset`
+* 关键词(全局属性值): `initial`, `inherit`, `unset`
   1. initial: 初始默认值
   1. inherit: 继承直接父元素的对应属性值
   1. unset: 表示如果该属性默认可继承，则值为inherit，否则值为initial。
@@ -29,10 +29,26 @@ order: 4
 * time类型: 时间值即一个 Number + 时间单位如: 1s
 * frequency类型: 频率值即一个 Number + 频率单位如: 50Hz
 * resolution类型: 分辨值即一个 integer + 分辨率单位如: 2dppx
-* Functional: 函数如: url()
+* functiona类型: 函数如: url()
 * percentage: 百分比如: 50%
-* color: 颜色值: #112233
+* color: 颜色值:
+  1. 十六进制: #ffffff(如果十六进制前三位和后三位是一样的可以简写#fff)
+  1. 英文颜色词汇如: red、green等
+  1. `transparent`: 全透明黑色
+  1. `currentcolor`: 图形和文件颜色表现一致
+  1. rgb(): rgb(red<红色>, green<绿色>, blue<蓝色>), 这3个参数是必须的且取值范围是0~255的整数。rgb(0,0,0)黑色
+  1. rgba(): rgba(red<红色>, green<绿色>, blue<蓝色>, alpha<透明度>), 颜色参数如上,透明度取值范围0.0~1.0之间
+  1. hsl(): hsl(hue<色调>, saturation<饱和度>, lightness<亮度>), 色调参数取值范围0 ~ 360的度数,饱和度和亮度参数都是百分比
+  1. hsla(): hsla(hue<色调>, saturation<饱和度>, lightness<亮度>, alpha<透明度>),参数如上
 * position: `left`、`right`、`center`、`top`、`buttom`
+* image类型:
+  1. url():
+  1. image():
+  1. linear-gradient()
+  1. radial-gradient()
+  1. repeating-linear-gradient()
+  1. repeating-radial-gradient()
+  1. element()
 
 ## 单位列表
 
@@ -73,8 +89,8 @@ order: 4
 
 样式特征的值集合后面添加 !important,说明该值很重要,从而忽略其他方式同样的值
 
-```jsx
+<!-- ```jsx
 import UnitConvert from 'component/CSS/UnitConvert';
 
 ReactDOM.render(<UnitConvert />, mountNode);
-```
+``` -->

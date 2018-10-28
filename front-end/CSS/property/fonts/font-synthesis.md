@@ -2,6 +2,7 @@
 title: font-synthesis
 category: property
 type: fonts
+order: 1.7
 ---
 
 # font

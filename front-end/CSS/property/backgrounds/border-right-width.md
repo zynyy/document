@@ -2,19 +2,26 @@
 title: border-right-width
 category: property
 type: backgrounds
+order: 4.1
 ---
 
-# CSS 边框线
+# border-right-width 右边框线宽度
 
-| 特征 | 值 | 描述 |
-| --- | --- | --- |
-| `border` | | |
-| `border-style` | | |
-| `border-width` | | |
-| `border-radius` | | |
-| `border-image` | | |
-| `border-iamge-source` | | |
-| `border-iamge-slice` | | |
-| `border-iamge-width` | | |
-| `border-iamge-outset` | | |
-| `border-iamge-repeat` | | |
+给元素设置右边框线宽度。
+
+## 语法
+
+```css
+border-right-width: [<length> | thin | medium | thick]
+
+eg:
+border-right-width: 1px; /* 设置右方向边框线宽度为 1px */
+```
+
+## 属性值
+
+1. [全局属性值](/front-end/CSS/values#anchor-值类型)
+1. [length](/front-end/CSS/values#anchor-值类型)
+1. `thin`: 细的
+1. `medium`: 中等
+1. `thick`: 厚的、粗的

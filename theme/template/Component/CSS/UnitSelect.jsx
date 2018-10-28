@@ -4,52 +4,76 @@ import { Select } from 'antd';
 
 const { Option, OptGroup } = Select;
 
+function getSelectUnitTypes(types: Array<String>) {
+  const unitTypes = {
+    length: [{
+      name: '视角',
+      units: ['px'],
+    }, {
+      name: '视区',
+      units: ['vw', 'vh'],
+    }, {
+      name: '字体',
+      units: ['em', 'ex', 'ch', 'rem'],
+    }, {
+      name: '物理',
+      units: ['cm', 'mm', 'Q', 'in', 'pc', 'pt'],
+    }],
+    percentage: [{
+      name: '百分比',
+      units: ['%'],
+    }],
+    time: [{
+      name: '时间',
+      units: ['ms', 's'],
+    }],
+    angle: [{
+      name: '角度',
+      units: ['deg', 'grad', 'rad', 'turn'],
+    }],
+    resolution: [{
+      name: '分辨率',
+      units: ['dpi', 'dpcm', 'dppx'],
+    }],
+    frequency: [{
+      name: '频率',
+      units: ['Hz', 'kHz'],
+    }],
+  };
+
+  return types.map(type => unitTypes[type]);
+}
+
 export default class UnitSelect extends React.Component {
   constructor(props) {
     super(props);
+    const unit = getSelectUnitTypes(props.selectUnitTypes);
     this.state = {
-      units: [{
-        unit: 'Viewport',
-        lengths: ['vw', 'vh'],
-      }, {
-        unit: '物理',
-        lengths: ['cm', 'mm', 'Q', 'in', 'pc', 'pt', 'px'],
-      }, {
-        unit: '视角',
-        lengths: ['px'],
-      }],
-      selectUnitValue: props.selectUnit,
-    };
-  }
-
-  handleSelectUnitChange = (value) => {
-    this.setState = {
-      selectUnit: value,
+      selectUnit: props.defaultUnit,
+      units: [].concat(...unit),
     };
   }
 
   render() {
-    const { selectUnit } = this.props;
-    const { units, selectUnitValue } = this.state;
+    const { selectUnit, units } = this.state;
+    const { onChange } = this.props;
     return (
       <Select
-        defaultValue={selectUnitValue}
-        style={{ width: 200 }}
-        onChange={this.handleSelectUnitChange}
+        defaultValue={selectUnit}
+        style={{ width: 100 }}
+        onChange={onChange}
       >
         {
-          selectUnit === 'all'
-            ? (
-              <Option value={selectUnit}>全部</Option>
-            )
-            : null
-        }
-        {
-          Object.keys(units).map(key => (
-            <OptGroup label={units[key].unit} key={key}>
+          units.map(val => (
+            <OptGroup label={val.name} key={val.name}>
               {
-                units[key].lengths.map(val => (
-                  <Option value={val} key={val}>{val}</Option>
+                val.units.map(unit => (
+                  <Option
+                    value={unit}
+                    key={unit}
+                  >
+                    {unit}
+                  </Option>
                 ))
               }
             </OptGroup>
@@ -60,10 +84,8 @@ export default class UnitSelect extends React.Component {
   }
 }
 
-UnitSelect.defaultProps = {
-  selectUnit: 'px',
-};
-
 UnitSelect.propTypes = {
-  selectUnit: PropTypes.string,
+  selectUnitTypes: PropTypes.arrayOf(PropTypes.string).isRequired,
+  defaultUnit: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };

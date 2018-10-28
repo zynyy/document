@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
+// import classnames from 'classnames';
 import { Link } from 'bisheng/router';
 
 
@@ -36,7 +36,6 @@ function initDocSearch() {
     debug: false, // Set debug to true if you want to inspect the dropdown
   });
 }
-
 
 export default class HeaderContent extends React.Component {
   constructor(props) {
@@ -169,7 +168,21 @@ export default class HeaderContent extends React.Component {
 
     return (
       <header id="header">
-        <Header style={isMobile ? { position: 'fixed', zIndex: 1, width: '100%' } : null} className={classNames('navbar-light')}>
+        {
+          moduleName
+            ? null
+            : (
+              <style dangerouslySetInnerHTML={{
+                __html: `html, body {
+                  height: ${isMobile ? '100vh' : '100%22'};
+                  overflow: hidden;
+                  position: relative;
+                }`,
+              }}
+              />
+            )
+        }
+        <Header className="navbar-light">
           {
             isMobile && moduleName && (
               <Popover

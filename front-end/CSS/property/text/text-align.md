@@ -1,5 +1,5 @@
 ---
-title: texe-align
+title: text-align
 category: property
 type: text
 anchor:
