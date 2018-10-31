@@ -12,8 +12,14 @@ order: 4
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-margin-bottom: [<length> | <percentage> | auto]
+margin-bottom: [
+  <length>
+  || <percentage>
+  || auto
+]
 
 eg:
 margin-bottom: 1px; /* 给元素下方向外边距设置 1px */

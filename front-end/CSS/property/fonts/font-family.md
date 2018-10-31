@@ -2,22 +2,33 @@
 title: font-family
 category: property
 type: fonts
-order: 1.1
+order: 1.6
 ---
 
-# font
+# font-family 字体族名
 
-| 特征 | 值 | 标签 | 描述 |
-| --- | --- | --- |
-| `font` | | | |
-| `font-family` | family-name, `sans-serif` | |
-| `font-weight` | | |
-| `font-strech` | | |
-| `font-style` | | |
-| `font-size` | | |
-| `font-size-adjust` | |
-| `font-synthesis` | family-name | |
+给元素文本内容设置字体族
 
-## 标准规范
+## 语法
 
-<https://www.w3.org/TR/css-fonts-3/>
+```css
+font-family: [
+  <family-name-string>
+  || <generic-family>
+]
+
+eg:
+font-family: serif;
+font-family: 'Microsoft YaHei';
+/* 可以设置多个 字体列表用英文逗号(,)隔开*/
+font-family: sans-serif, serif;
+```
+
+## 属性值
+
+* generic-family:如下
+  1. serif
+  1. sans-serif
+  1. cursive
+  1. fantasy
+  1. monospace

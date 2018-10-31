@@ -9,8 +9,21 @@ order: 8.5
 
 给元素设置背景图片重复方式
 
+## 语法
+
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。
+
 ```css
-background-repeat: [ repeat-x | repeat-y | [ repeat | space | round | no-repeat]{1, 2}]
+background-repeat: [
+  repeat-x
+  || repeat-y
+  || [
+    repeat
+    || space
+    || round
+    || no-repeat
+  ]{1, 2}
+]
 
 eg:
 background-repeat: repeat-x; /* 元素背景图像沿着 x 轴方向重复直到*/

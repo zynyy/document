@@ -2,21 +2,30 @@
 title: font-variant-position
 category: property
 type: fonts
+order: 1.22
+anchor: propdef-font-variant-position
 ---
 
-# font
+# font-variant-position 字体变位
 
-| 特征 | 值 | 标签 | 描述 |
-| --- | --- | --- |
-| `font` | | | |
-| `font-family` | family-name, `sans-serif` | |
-| `font-weight` | | |
-| `font-strech` | | |
-| `font-style` | | |
-| `font-size` | | |
-| `font-size-adjust` | |
-| `font-synthesis` | family-name | |
+给元素文本内容设置位置。比如 HTML 标签的 `<sub>`、`<sup>`
 
-## 标准规范
+## 语法
 
-<https://www.w3.org/TR/css-fonts-3/>
+```css
+font-variant-position: [
+  normal
+  || sub
+  || super
+]
+
+eg:
+font-variant-position: sub;
+```
+
+## 属性值
+
+* [全局属性值](/front-end/CSS/values#anchor-值类型)
+* `normal`:
+* `sub`:
+* `super`:

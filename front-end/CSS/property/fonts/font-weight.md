@@ -2,22 +2,20 @@
 title: font-weight
 category: property
 type: fonts
-order: 1.2
+order: 1.3
 ---
 
-# font
+# font-weight 字体粗细
 
-| 特征 | 值 | 标签 | 描述 |
-| --- | --- | --- |
-| `font` | | | |
-| `font-family` | family-name, `sans-serif` | |
-| `font-weight` | | |
-| `font-strech` | | |
-| `font-style` | | |
-| `font-size` | | |
-| `font-size-adjust` | |
-| `font-synthesis` | family-name | |
+给元素文字内容设置字体粗细
 
-## 标准规范
+## 语法
 
-<https://www.w3.org/TR/css-fonts-3/>
+```css
+font-weight: [
+  
+]
+
+eg:
+font-weight: 700;
+```

@@ -2,46 +2,29 @@
 title: width
 category: property
 type: sizing
-anhcor:
+anhcor: preferred-size-properties
+order: 2
 ---
 
 # width
 
 定义元素内容区的宽度
 
+## 语法
+
+```css
+width: [ auto || <length> || <percentage> || min-content || max-content || fit-content() ]
+
+eg:
+width: 100px; /* 设置 4 个方向边框线颜色为 red */
+```
+
 ## 属性值
 
-| 值 | 描述 |
-| --- | --- |
-| auto | |
-| min-content | |
-| max-content | |
-| fit-content() | |
-| auto | |
-| length | |
-| percentage | |
-
-```jsx
-import CSSDemo from 'demo/CSSDemo';
-
-const values = {
-  keywork: [
-    'auto', 'min-content', 'max-content'
-  ],
-  functions: [{
-    function: 'fit-content',
-    value: [
-      'length', 'percentage'
-    ]
-  }],
-  length: {
-    value: 500,
-    unit: 'px'
-  },
-  percentage: {
-    value: '10%'
-  }
-};
-
-ReactDOM.render(<CSSDemo property='width' values={values} defaultValue="auto" />, mountNode);
-```
+1. [全局属性值](/front-end/CSS/values#anchor-值类型)
+1. [length](/front-end/CSS/values#anchor-值类型)
+1. [percentage](/front-end/CSS/values#anchor-值类型)
+1. `auto`
+1. `min-content`:
+1. `max-content`:
+1. [fit-content()](/front-end/CSS/function/sizing/fit-content)

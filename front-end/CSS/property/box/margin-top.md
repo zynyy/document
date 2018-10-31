@@ -12,8 +12,14 @@ order: 2
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-margin-top: [<length> | <percentage> | auto]
+margin-top: [
+  <length>
+  || <percentage>
+  || auto
+]
 
 eg:
 margin-top: 1px; /* 给元素上方向外边距设置 1px */

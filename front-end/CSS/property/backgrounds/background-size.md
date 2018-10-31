@@ -11,8 +11,18 @@ order: 8.4
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。
+
 ```css
-background-size: [ [<length> | <percentage> | auto ]{1,2} | cover | contain ]
+background-size: [
+  [
+    <length>
+    || <percentage>
+    || auto
+  ]{1, 2}
+  || cover
+  || contain
+]
 
 eg:
 background-size: 10px; /* 元素背景图象宽度、高度为 10px */

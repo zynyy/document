@@ -7,14 +7,18 @@ order: 7
 
 # border-radius 圆角边框
 
-该属性为复合属性(4个属性),给元素设置4角边框圆角。4个属性分别为: `border-top-left-radius`(左上角)、`border-top-right-radius`(右上角)、`border-bottom-right-radius`(右下角)、`border-bottom-left-radius`(左下角);
+该属性为简写属性(4种),给元素设置4角边框圆角。4种属性分别为: `border-top-left-radius`(左上角)、`border-top-right-radius`(右上角)、`border-bottom-right-radius`(右下角)、`border-bottom-left-radius`(左下角);
 
 ## 语法
 
-> 注 ? 表示该参数可选, / 则表示如果需要此参数则必须带上
+注: ? 表示该属性值可选， / 表示如果需要此属性值则必须带上，[] 表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。
 
 ```css
-border-radius: [<length> | <percentage> | [/ <length> | <percentage>]? ]{1, 4}
+border-radius: [
+  <length>
+  || <percentage>
+  || / [ <length> || <percentage> ]?
+]{1, 4}
 
 eg: /* 如果只写 1~ 2 参数，则剩下的2~1个参数的默认值是: initial */
 border-radius: 1px; /* 元素4角边框圆角半径为 1px */

@@ -11,8 +11,13 @@ order: 7.3
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。
+
 ```css
-border-bottom-right-radius: [<length> | <percentage>]{1, 2}
+border-bottom-right-radius: [
+  <length>
+  || <percentage>
+]{1, 2}
 
 eg:
 border-bottom-right-radius: 1px; /* 元素 右下角边框的圆角水平、垂直半径为 1px; */

@@ -11,10 +11,13 @@ order: 1
 
 ## 语法
 
->带有 ? 表示可以 0 到 多个
+注: ? 表示该属性值可选，[] 表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。&& 表示相邻属性值必须要有。
 
 ```css
-box-shadow: [ none | inset? && <length>{2, 4} && <color>? ]
+box-shadow: [
+  none
+  || inset? && <length>{2, 4} && <color>?
+]
 
 eg:
 box-shadow: none ; /* 取消元素阴影效果 */

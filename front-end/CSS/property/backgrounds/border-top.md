@@ -7,12 +7,18 @@ order: 3
 
 # border-top 上边框线
 
-该属性为复合属性(3个属性),给元素设置上边框。3个属性分别: `border-top-width`、`border-top-style`、`border-top-color`。
+该属性为简写属性(3种),给元素设置上边框。3种属性分别: `border-top-width`、`border-top-style`、`border-top-color`。
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一, {} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。
+
 ```css
-border-top: [<border-top-width> | <border-top-style> | <border-top-color>]{1, 3}
+border-top: [
+  <border-top-width>
+  || <border-top-style>
+  || <border-top-color>
+]{1, 3}
 
 eg: /* 如果只写 1~ 2 参数，则剩下的2~1个参数的默认值是: initial */
 border-top: 1px; /* 设置上边框线宽度 1px */

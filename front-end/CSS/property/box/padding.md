@@ -8,12 +8,17 @@ order: 6
 
 # padding 内边距
 
-该属性为复合属性(4个属性),给元素设置4个方向(上、右、下、左)的内边距即内容到边界的距离。4个属性分别: `padding-top`、`padding-right`、`padding-bottom`、`padding-left`。
+该属性为简写属性(4种),给元素设置4个方向(上、右、下、左)的内边距即内容到边界的距离。4种属性分别: `padding-top`、`padding-right`、`padding-bottom`、`padding-left`。
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-padding: [<length> | <percentage>]{1, 4}
+padding: [
+  <length>
+  || <percentage>
+]{1, 4}
 
 eg: /* 水平即左右，垂直即上下*/
 padding: 1px; /* 给四个方向内边距设置 1px */

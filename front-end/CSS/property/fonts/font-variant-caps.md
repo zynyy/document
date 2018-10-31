@@ -2,9 +2,11 @@
 title: font-variant-caps
 category: property
 type: fonts
+order: 1.23
+anchor: propdef-font-variant-caps
 ---
 
-# font
+# font-variant-caps
 
 | 特征 | 值 | 标签 | 描述 |
 | --- | --- | --- |

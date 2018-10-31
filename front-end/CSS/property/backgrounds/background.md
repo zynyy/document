@@ -7,14 +7,22 @@ order: 8
 
 # background 背景
 
-该属性为复合属性(8个属性),给元素设置背景。8个属性分别为: `background-color`、`background-image`、`background-position`、`background-size`、`background-repeat`、`background-attachment`、`background-clip`、`background-origin`;
+该属性为简写属性(8种),给元素设置背景。8种属性分别为: `background-color`、`background-image`、`background-position`、`background-size`、`background-repeat`、`background-attachment`、`background-clip`、`background-origin`;
 
 ## 语法
 
-注: | 则表示几个参数任选其一 ? 表示该参数可选, / 则表示如果需要此参数则必须带上。
+注: ? 表示该属性值可选， / 表示如果需要此属性值则必须带上，[] 表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。
 
 ```css
-background: [ <bg-color> | <bg-image> | <bg-position> </ bg-size>? | <bg-repeat> | <bg-attachment> | <bg-clip> | <bg-origin>]{1, 8}
+background: [
+  <bg-color>
+  || <bg-image>
+  || <bg-position> / <bg-size>?
+  || <bg-repeat>
+  || <bg-attachment>
+  || <bg-clip>
+  || <bg-origin>
+]{1, 7}
 
 eg:
 background: red; /* 设置 元素背景颜色 */
@@ -24,7 +32,7 @@ background: center
 
 ## 属性值
 
-接受1~8个可选参数，每个参数取值如下：
+接受1~7个可选参数，每个参数取值如下：
 
 1. [全局属性值](/front-end/CSS/values#anchor-值类型)
 1. [bg-color](/front-end/CSS/property/backgrounds/background-color)

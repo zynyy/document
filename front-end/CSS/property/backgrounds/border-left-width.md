@@ -11,8 +11,15 @@ order: 6.1
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-border-left-width: [<length> | thin | medium | thick]
+border-left-width: [
+  <length>
+  || thin
+  || medium
+  || thick
+]
 
 eg:
 border-left-width: 1px; /* 设置左方向边框线宽度为 1px */

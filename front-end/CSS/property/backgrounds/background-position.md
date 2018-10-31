@@ -11,22 +11,31 @@ order: 8.3
 
 ## 语法
 
-注: 符号 [] 表示一组值, | 表示 [] 内的任选其一, & 表示 前后两个[]内的值是必须, ?表示可选
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一, && 表示相邻属性值必须要有。{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开, ? 表示此属性值可选。
 
 ```css
 background-position: [
-  [ top | right | bottom | left | center | [ <length> | <percentage> ]{1, 2} ]
-  |
-  [ left | center | right | <length> | <percentage> ]
-  [ top | center | bottom | <length> | <percentage> ]
-  |
-  [ center | [
-      [ left | right ] <length>? | <percentage>?
+  [
+    top
+    || right
+    || bottom
+    || left
+    || center
+    || <length>
+    || <percentage>
+  ]{1, 2}
+  || [
+    [ center
+      || [
+        [ left || right]
+        || [ <length> || <percentage> ]?
+      ]
     ]
-  ]
-  &
-  [ center | [
-      [ top | bottom ] <length>? | <percentage>?
+    &&
+    [ center || [
+        [ top || bottom ]
+        || [ <length> || <percentage> ]?
+      ]
     ]
   ]
 ]

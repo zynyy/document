@@ -11,8 +11,12 @@ order: 5.3
 
 ## 语法
 
+注: []表示一组可选的属性值。
+
 ```css
-border-bottom-color: [<color>]
+border-bottom-color: [
+  <color>
+]
 
 eg:
 border-bottom-color: red; /* 设置下方向边框线颜色为 red */

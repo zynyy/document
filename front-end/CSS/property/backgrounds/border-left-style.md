@@ -11,8 +11,21 @@ order: 6.2
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-border-left-style: [none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset]
+border-left-style: [
+  none
+  || hidden
+  || dotted
+  || dashed
+  || solid
+  || double
+  || groove
+  || ridge
+  || inset
+  || outset
+]
 
 eg:
 border-left-style: solid; /* 设置左方向边框线样式为 solid*/

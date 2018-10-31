@@ -11,8 +11,12 @@ order: 6.3
 
 ## 语法
 
+注: []表示一组可选的属性值。
+
 ```css
-border-left-color: [<color>]
+border-left-color: [
+  <color>
+]
 
 eg:
 border-left-color: red; /* 设置左方向边框线颜色为 red */

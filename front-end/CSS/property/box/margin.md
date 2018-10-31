@@ -8,12 +8,18 @@ order: 1
 
 # margin 外边距
 
-该属性为复合属性(4个属性),给元素设置4个方向(上、右、下、左)的外边距。4个属性分别: `margin-top`、`margin-right`、`margin-bottom`、`margin-left`。
+该属性为简写属性(4种),给元素设置4个方向(上、右、下、左)的外边距。4种属性分别: `margin-top`、`margin-right`、`margin-bottom`、`margin-left`。
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开。。
+
 ```css
-margin: [<length> | <percentage> | auto]{1, 4}
+margin: [
+  <length>
+  || <percentage>
+  || auto
+]{1, 4}
 
 eg: /* 水平即左右，垂直即上下*/
 margin: 1px; /* 给四个方向外边距设置 1px */

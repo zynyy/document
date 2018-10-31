@@ -11,8 +11,21 @@ order: 3.2
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-border-top-style: [none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset]
+border-top-style: [
+  none
+  || hidden
+  || dotted
+  || dashed
+  || solid
+  || double
+  || groove
+  || ridge
+  || inset
+  || outset
+]
 
 eg:
 border-top-style: solid; /* 设置上方向边框线样式为 solid*/

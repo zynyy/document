@@ -12,8 +12,13 @@ order: 9
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-padding-bottom: [<length> | <percentage> | auto]
+padding-bottom: [
+  <length>
+  || <percentage>
+]
 
 eg:
 padding-bottom: 1px; /* 给元素下方向内边距设置 1px */
@@ -24,4 +29,3 @@ padding-bottom: 1px; /* 给元素下方向内边距设置 1px */
 1. [全局属性值](/front-end/CSS/values#anchor-值类型)
 1. [length](/front-end/CSS/values#anchor-值类型)，注: 该值允许为负的
 1. [percentage](/front-end/CSS/values#anchor-值类型)，注: 该值允许为负的
-1. `auto`: 浏览器会自动选择一个合适的值来应用。

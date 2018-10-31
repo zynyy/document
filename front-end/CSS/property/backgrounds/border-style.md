@@ -7,12 +7,25 @@ order: 2.2
 
 # border-style 边框线样式
 
-该属性为复合属性(4个属性),给元素设置边框线样式。4个属性分别: `border-top-style`、`border-right-style`、`border-bottom-style`、`border-left-style`。
+该属性为简写属性(4种),给元素设置边框线样式。4个属性分别: `border-top-style`、`border-right-style`、`border-bottom-style`、`border-left-style`。
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
-border-style: [none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset]
+border-style: [
+  none
+  || hidden
+  || dotted
+  || dashed
+  || solid
+  || double
+  || groove
+  || ridge
+  || inset
+  || outset
+]
 
 eg:
 border-style: solid; /* 设置 4 个方向 边框线样式为 solid*/
