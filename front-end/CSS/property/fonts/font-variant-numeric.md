@@ -12,15 +12,17 @@ anchor: font-variant-numeric-prop
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
 font-variant-numeric: [
   normal
+  || ordinal
+  || slashed-zero
   || <lining-nums>
   || <numeric-figure-values>
   || <numeric-spacing-values>
   || <numeric-fraction-values>
-  || ordinal
-  || slashed-zero
 ]
 
 eg:

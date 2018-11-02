@@ -3,6 +3,7 @@ title: font-size-adjust
 category: property
 type: fonts
 order: 1.6
+anchor: font-size-adjust-prop
 ---
 
 # font-size-adjust 统一字体族大小尺寸
@@ -10,6 +11,8 @@ order: 1.6
 给元素文本内容的字体族设置统一的 x 轴高度。因为不同的字体族的 x 轴高度不一。
 
 ## 语法
+
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
 
 ```css
 font-size-adjust: [

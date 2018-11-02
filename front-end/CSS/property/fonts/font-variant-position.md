@@ -12,6 +12,8 @@ anchor: propdef-font-variant-position
 
 ## 语法
 
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
+
 ```css
 font-variant-position: [
   normal

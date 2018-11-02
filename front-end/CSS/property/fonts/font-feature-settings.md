@@ -2,6 +2,8 @@
 title: font-feature-settings
 category: property
 type: fonts
+anchor: font-feature-settings-prop
+order: 3
 ---
 
 # font-feature-settings 控制OpenType字体特征功能
@@ -9,6 +11,8 @@ type: fonts
 控制[OpenType字体](/)特征功能。
 
 ## 语法
+
+注: []表示一组可选的属性值，|| 表示 [] 内的属性值任选其一，{} 表示 [] 内的属性值任选其中几个属性值并且用空格隔开，&& 表示相邻属性值必须要有。
 
 ```css
 font-feature-settings: [

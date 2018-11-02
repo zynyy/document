@@ -2,21 +2,30 @@
 title: font-kerning
 category: property
 type: fonts
+anchor: font-kerning-prop
+order: 2
 ---
 
-# font
+# font-kerning 字母间距
 
-| 特征 | 值 | 标签 | 描述 |
-| --- | --- | --- |
-| `font` | | | |
-| `font-family` | family-name, `sans-serif` | |
-| `font-weight` | | |
-| `font-strech` | | |
-| `font-style` | | |
-| `font-size` | | |
-| `font-size-adjust` | |
-| `font-synthesis` | family-name | |
+控制元素文本内容(字母)的间距
 
-## 标准规范
+## 语法
 
-<https://www.w3.org/TR/css-fonts-3/>
+```css
+font-kerning: [
+  auto
+  || normal
+  || none
+]
+
+eg:
+font-kerning: normal;
+```
+
+## 属性值
+
+* [全局属性值](/front-end/CSS/values#anchor-值类型)
+* `auto`:
+* `normal`:
+* `none`:

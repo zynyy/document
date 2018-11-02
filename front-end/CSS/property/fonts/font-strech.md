@@ -3,21 +3,40 @@ title: font-strech
 category: property
 type: fonts
 order: 1.4
+anchor: font-stretch-prop
 ---
 
-# font
+# font-strech 字体外观
 
-| 特征 | 值 | 标签 | 描述 |
-| --- | --- | --- |
-| `font` | | | |
-| `font-family` | family-name, `sans-serif` | |
-| `font-weight` | | |
-| `font-strech` | | |
-| `font-style` | | |
-| `font-size` | | |
-| `font-size-adjust` | |
-| `font-synthesis` | family-name | |
+控制元素文本内容的字体可伸缩的外观。
 
-## 标准规范
+## 语法
 
-<https://www.w3.org/TR/css-fonts-3/>
+```css
+font-strech: [
+  normal
+  || condensed
+  || ultra-condensed
+  || extra-condensed
+  || semi-condensed
+  || semi-expanded
+  || expanded
+  || extra-expanded
+  || ultra-expanded
+]
+
+eg:
+font-strech: condensed;
+```
+
+## 属性值
+
+* normal
+* condensed
+* ultra-condensed
+* extra-condensed
+* semi-condensed
+* semi-expanded
+* expanded
+* extra-expanded
+* ultra-expanded

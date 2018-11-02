@@ -38,10 +38,11 @@ order: 4
   1. `transparent`: 全透明黑色
   1. `currentcolor`: 图形和文件颜色表现一致
   1. rgb(): rgb(red<红色>, green<绿色>, blue<蓝色>), 这3个参数是必须的且取值范围是0~255的整数。rgb(0,0,0)黑色
-  1. rgba(): rgba(red<红色>, green<绿色>, blue<蓝色>, alpha<透明度>), 颜色参数如上,透明度取值范围0.0~1.0之间
+  1. rgba(): rgba(red<红色>, green<绿色>, blue<蓝色>, alphavalue<透明度>)
   1. hsl(): hsl(hue<色调>, saturation<饱和度>, lightness<亮度>), 色调参数取值范围0 ~ 360的度数,饱和度和亮度参数都是百分比
-  1. hsla(): hsla(hue<色调>, saturation<饱和度>, lightness<亮度>, alpha<透明度>),参数如上
+  1. hsla(): hsla(hue<色调>, saturation<饱和度>, lightness<亮度>, alphavalue<透明度>),参数如上
 * position: `left`、`right`、`center`、`top`、`buttom`
+* alphavalue: 介于0.0 ~ 1.0之间的数字
 * image类型:
   1. url():
   1. image():

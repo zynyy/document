@@ -3,6 +3,7 @@ title: font-size
 category: property
 type: fonts
 order: 1.5
+anchor: font-size-prop
 ---
 
 # font-size 字体大小
@@ -10,6 +11,8 @@ order: 1.5
 给元素文本内容设置字体大小。
 
 ## 语法
+
+注: [] 表示一组可选的属性值，|| 表示 [] 内的属性值任选其一。
 
 ```css
 font-size: [

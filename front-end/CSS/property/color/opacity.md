@@ -2,15 +2,27 @@
 title: opacity
 category: property
 type: color
+anchor: transparency
+order: 2
 ---
 
-# CSS 颜色
+# opacity 透明度
 
-# color
+给元素设置透明度。
 
-| 特征 | 值 | 适用元素 | 是否遗传 | 描述 |
-| ---- | ---- | ---- | --- |
-| `color` | 所有元素 | color English、十六进制、rag(0-255, 0-255, 0-255)、raga(0-255,0-255,0-255, 0-1) | `inherit`| 是 | 设置字体的颜色 |
-| `opacity` | 所有元素 | 0-1之间的值 | `inherit`| | |
+## 语法
 
-<https://www.w3.org/TR/css-color-3/>
+```css
+opacity: [
+  <alphavalue>
+]
+
+eg:
+
+opacity: 0.5;
+```
+
+## 属性值
+
+* [全局属性值](/front-end/CSS/values#anchor-值类型)
+* [alphavalue](/front-end/CSS/values#anchor-值类型)
