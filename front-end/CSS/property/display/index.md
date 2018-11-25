@@ -8,38 +8,58 @@ type: display
 
 指定用于元素的呈现框的类型。
 
+## 语法
+
+```css
+display: [
+  <display-outside>
+  || <display-listitem>
+  || <display-inside>
+  || <display-legacy>
+  || <display-internal>
+  || <display-box>
+]
+
+eg:
+diaplay: block;
+```
+
 ## 属性值
 
-| 值 | 类型 | 描述 |
-| --- | --- | --- |
-| `block` | outside | |
-| `inline` | outside | |
-| `run-in` | outside | 不建议使用 |
-| `list-item` | listitem | |
-| `table` | inside | |
-| `flex` | inside | |
-| `grid` | inside | |
-| `ruby` | inside | |
-| `flow` | inside | |
-| `flow-root` | inside | |
-| `inline-block` | legacy | |
-| `inline-table` | legacy | |
-| `inline-flex` | legacy | |
-| `inline-grid` | legacy | |
-| `table-row-group` | Internal | |
-| `table-header-group` | Internal | |
-| `table-footer-group` | Internal | |
-| `table-row` | Internal | |
-| `table-cell` | Internal | |
-| `table-column-group` | Internal | |
-| `table-column` | Internal | |
-| `table-caption` | | 表格标题 |
-| `ruby-base` | Internal | |
-| `ruby-text` | Internal | |
-| `ruby-base-container` | Internal | |
-| `ruby-text-container` | Internal | |
-| `none` | Box | |
-| `contents` | Box | |
+* [全局属性值](/front-end/CSS/values#anchor-值类型)
+* display-outside: 以下关键词
+  1. `block`: 给元素设置块级框
+  1. `inline`: 给元素设置内联级框
+  1. `run-in`: 给元素设置特殊的内联级框
+* display-listitem: `[ <display-outside>? && [ flow || flow-root ]? &&  list-item ]`
+* display-inside:
+  1. `table`
+  1. `flex`
+  1. `grid`
+  1. `ruby`
+  1. `flow`
+  1. `flow-root`
+* display-legacy:
+  1. `inline-block`
+  1. `inline-table`
+  1. `inline-flex`
+  1. `inline-grid`
+* display-internal:
+  1. `table-row-group`
+  1. `table-header-group`
+  1. `table-footer-group`
+  1. `table-row`
+  1. `table-cell`
+  1. `table-column-group`
+  1. `table-column`
+  1. `table-caption`
+  1. `ruby-base`
+  1. `ruby-text`
+  1. `ruby-base-container`
+  1. `ruby-text-container`
+* display-box:
+  1. `none`
+  1. `contents`
 
 ```jsx
 import CSSDemo from 'demo/CSSDemo';

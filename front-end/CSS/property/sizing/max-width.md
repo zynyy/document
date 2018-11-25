@@ -2,18 +2,25 @@
 title: max-width
 category: property
 type: sizing
-anhcor: max-size-properties
+anchor: max-size-properties
 order: 2.2
 ---
 
 # max-width
 
-定义元素内容区的宽度
+给元素设置最大宽度。注: 如果设置的`width`的属性值大于该属性(`max-width`)值时，不管该属性(`width`)值有没有`!important`都会按照该属性(`max-width`)值设置元素宽度
 
 ## 语法
 
 ```css
-max-width: [ none || <length> || <percentage> || min-content || max-content || fit-content() ]
+max-width: [
+  none
+  || <length>
+  || <percentage>
+  || min-content
+  || max-content
+  || fit-content()
+]
 
 eg:
 max-width: 100px; /* 设置 4 个方向边框线颜色为 red */

@@ -2,7 +2,27 @@
 title: visiblity
 category: property
 type: CSS22
-anchor:
+anchor: index-v
+order: 2
 ---
 
-<https://www.w3.org/TR/CSS22/visufx.html#propdef-visibility>
+# visiblity
+
+## 语法
+
+```css
+visiblity: [
+  visible
+  || hidden
+  || collapse
+]
+
+eg:
+visiblity: visible;
+```
+
+## 属性值
+
+* `visible`:
+* `hidden`:
+* `collapse`:

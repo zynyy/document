@@ -375,7 +375,7 @@ const getCSSModulesInformation = (module) => {
   }, {
     module: 'CSS22',
     time: '2016年4月12号',
-    url: 'visufx.html',
+    url: 'indexlist.html',
   }, {
     module: 'pointerevents2',
     time: '2018年10月16号',
@@ -387,6 +387,19 @@ const getCSSModulesInformation = (module) => {
       1: {
         time: '2015年12月03日',
         state: 'REC',
+      },
+    },
+  }, {
+    module: 'images',
+    version: {
+      // 3: {
+      //   url: true,
+      //   time: '2012年04月17日',
+      //   state: 'REC', // https://www.w3.org/TR/css3-images/#
+      // },
+      4: {
+        time: '2017年4月13日',
+        state: 'Dr',
       },
     },
   }];

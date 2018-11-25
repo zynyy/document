@@ -2,18 +2,25 @@
 title: min-height
 category: property
 type: sizing
-anhcor: min-size-properties
+anchor: min-size-properties
 order: 3.1
 ---
 
 # min-height
 
-定义元素内容区的宽度
+给元素设置最小高度。如果设置的`height`的属性值小于该属性(`min-height`)值时，不管该属性(`height`)值有没有`!important`都会按照该属性(`min-height`)值设置元素高度
 
 ## 语法
 
 ```css
-min-height: [ auto || <length> || <percentage> || min-content || max-content || fit-content() ]
+min-height: [
+  auto
+  || <length>
+  || <percentage>
+  || min-content
+  || max-content
+  || fit-content()
+]
 
 eg:
 min-height: 100px; /* 设置 4 个方向边框线颜色为 red */

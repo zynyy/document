@@ -2,18 +2,25 @@
 title: width
 category: property
 type: sizing
-anhcor: preferred-size-properties
+anchor: preferred-size-properties
 order: 2
 ---
 
 # width
 
-定义元素内容区的宽度
+给元素设置宽度。
 
 ## 语法
 
 ```css
-width: [ auto || <length> || <percentage> || min-content || max-content || fit-content() ]
+width: [
+  auto
+  || <length>
+  || <percentage>
+  || min-content
+  || max-content
+  || fit-content()
+]
 
 eg:
 width: 100px; /* 设置 4 个方向边框线颜色为 red */
